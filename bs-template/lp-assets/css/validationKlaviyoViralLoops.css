@@ -1,0 +1,7 @@
+.participation_form.notValid .submit {
+  background: #dddddd;
+}
+.participation_form.notValid .submit:hover {
+  cursor: auto;
+  background: #dddddd;
+}

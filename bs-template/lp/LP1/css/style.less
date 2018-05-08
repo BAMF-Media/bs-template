@@ -1,0 +1,1163 @@
+/*============    RESET    ===========*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+
+}
+
+ol, ul {
+  list-style: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+a:hover,
+a:link,
+a:focus,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+/* hide horizontal scroll */
+body {
+  overflow-x: hidden;
+}
+
+/*============    FONTS    ===========*/
+
+@font-face {
+  font-family: 'Rubik Medium';
+  src: url('../fonts/Rubik-Medium.eot');
+  src: url('../fonts/Rubik-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Rubik-Medium.woff') format('woff'),
+  url('../fonts/Rubik-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rubik Regular';
+  src: url('../fonts/Rubik-Regular.eot');
+  src: url('../fonts/Rubik-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Rubik-Regular.woff') format('woff'),
+  url('../fonts/Rubik-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rubik Light';
+  src: url('../fonts/Rubik-Light.eot');
+  src: url('../fonts/Rubik-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Rubik-Light.woff') format('woff'),
+  url('../fonts/Rubik-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/*Variables for fonts start*/
+.rubikL {
+  font-family: 'Rubik Light';
+  font-weight: 300;
+  font-weight: normal;
+}
+
+.rubikM {
+  font-family: 'Rubik Medium';
+  font-weight: normal;
+  font-weight: 500;
+}
+
+.rubikR {
+  font-family: 'Rubik Regular';
+  font-weight: normal;
+  font-weight: normal;
+}
+
+/*Variables for fonts end*/
+
+/*Variables for colors start*/
+.bgWhite {
+  background: #ffffff;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.lightBlue {
+  color: #343741;
+}
+
+.darkBlue {
+  color: #30323a;
+}
+
+.blue {
+  color: #5eaccf;
+}
+
+.grey {
+  color: #545454;
+}
+
+.bgLighterBLue {
+  background: #60d0f0;
+}
+
+/*Variables for colors end*/
+
+.h1 {
+
+}
+
+.h2 {
+
+}
+
+.h3 {
+
+}
+
+.h4 {
+
+}
+
+.h5 {
+
+}
+
+p {
+  .rubikL;
+}
+
+span {
+  .rubikM;
+}
+
+/* Form Section Start*/
+form {
+  display: flex;
+  flex-direction: column;
+  background: #707070;
+  max-width: 520px;
+  padding: 33px;
+  p {
+    line-height: 40px;
+    font-size: 34px;
+    .white;
+    margin-bottom: 15px;
+  }
+  .input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    .rubikL;
+    font-size: 24px;
+    .white;
+    padding-bottom: 7px;
+    margin-top: 20px;
+    padding-left: 6px;
+  }
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    .rubikL;
+    font-size: 24px;
+    color: #ffffff;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    .rubikL;
+    font-size: 24px;
+    .white;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    .rubikL;
+    font-size: 24px;
+    .white;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    .rubikL;
+    font-size: 24px;
+    .white;
+  }
+  .input::-webkit-input-placeholder {
+    text-indent: 0px;
+    transition: text-indent 0.6s ease;
+  }
+  .input::-moz-placeholder {
+    text-indent: 0px;
+    transition: text-indent 0.6s ease;
+  }
+  .input:-moz-placeholder {
+    text-indent: 0px;
+    transition: text-indent 0.6s ease;
+  }
+  .input:-ms-input-placeholder {
+    text-indent: 0px;
+    transition: text-indent 0.6s ease;
+  }
+  .input:focus::-webkit-input-placeholder {
+    text-indent: 700px;
+    transition: text-indent 0.6s ease;
+  }
+  .input:focus::-moz-placeholder {
+    text-indent: 700px;
+    transition: text-indent 0.6s ease;
+  }
+  .input:focus:-moz-placeholder {
+    text-indent: 700px;
+    transition: text-indent 0.6s ease;
+  }
+  .input:focus:-ms-input-placeholder {
+    text-indent: 700px;
+    transition: text-indent 0.6s ease;
+  }
+
+  .submit {
+    max-width: 200px;
+    .bgLighterBLue;
+    border: none;
+    margin-top: 50px;
+    .white;
+    .rubikM;
+    font-size: 24px;
+    padding: 25px;
+    text-transform: uppercase;
+  }
+
+}
+
+/* Form Section End*/
+
+/* Header Section Start*/
+header {
+  min-height: 65px;
+  background: #ffffff;
+  .headerFluid {
+    .headerContainer {
+      .headerWrap {
+        margin-top: 22px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo {
+        a {
+          cursor: pointer;
+        }
+      }
+
+      .leftHeader {
+        display: flex;
+      }
+      /*Hide on desktop */
+      .openNav {
+        display: none;
+      }
+      .navMenu {
+        .closeBtnMenu {
+          display: none;
+        }
+        .ulNav {
+          display: flex;
+          li {
+            margin-right: 70px;
+            &:last-child {
+              margin-right: 0px;
+            }
+            a {
+              font-size: 18px;
+              .lightBlue;
+              .rubikL;
+              cursor: pointer;
+              -moz-transition: all 0.2s 0.02s ease;
+              -o-transition: all 0.2s 0.02s ease;
+              -webkit-transition: all 0.2s 0.02s ease;
+              &:hover {
+                -moz-transition: all 0.2s 0.02s ease;
+                -o-transition: all 0.2s 0.02s ease;
+                -webkit-transition: all 0.2s 0.02s ease;
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+/* Header Section End*/
+
+/* Header Bear Product Section Start */
+.bearProductFluid {
+  min-height: 1721px;
+  max-width: 1440px;
+  background: url(../img/bearProductWrap.png) no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+
+  .bearProductContainer {
+    .bottle {
+      img {
+        height: 500px;
+        margin-top: 120px;
+        margin-left: auto;
+        margin-right: auto;
+        display: none;
+      }
+    }
+    .productDesc {
+      font-size: 28px;
+      .lightBlue;
+      line-height: 48px;
+      margin-top: 150px;
+      margin-bottom: 60px;
+    }
+  }
+}
+
+/* Header Bear Product Section End */
+
+/* nutrients Section Start*/
+.nutrientsFluid {
+  .nutrientsContainer {
+    padding-top: 80px;
+    padding-bottom: 30px;
+    .nutrientsWrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      .nutrientsInner {
+        display: flex;
+        flex-wrap: nowrap;
+        font-size: 20px;
+        margin-bottom: 20px;
+        img {
+          margin-right: 15px;
+          max-width: 50px;
+          height: auto;
+        }
+        .nutrientsInnerPB {
+          text-transform: uppercase;
+          .rubikM;
+          color: #30323a;
+        }
+        .nutrientsInnerPL {
+          text-transform: uppercase;
+          .rubikL;
+          color: #30323a;
+        }
+      }
+      .nutrientsInnerC {
+        align-items: center;
+      }
+
+    }
+    .nutrientsWrapBottom {
+      justify-content: space-between;
+      margin-top: 15px;
+    }
+    .nutrientsDesc {
+      font-size: 30px;
+      .rubikL;
+      line-height: 1.4;
+      .grey;
+      padding-top: 10px;
+      span {
+        text-transform: uppercase;
+        .rubikL;
+        .grey;
+      }
+    }
+  }
+}
+
+/* nutrients Section End*/
+
+/* productsWrapFluid section start */
+.productsWrapFluid {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* productsWrapFluid section start */
+
+/*  optimal Section start */
+.optimalFluid {
+  padding-top: 90px;
+  .optimalContainer {
+    .optimalWrap {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+      .optimalInner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 25%;
+        min-width: 250px;
+        margin-bottom: 60px;
+        img {
+          padding-bottom: 20px;
+        }
+        p {
+          color: #5eaccf;
+          font-size: 22px;
+          .rubikR;
+        }
+      }
+    }
+  }
+}
+
+/*  optimal Section end */
+
+/*  magicBottle Section Start */
+.magicBottleFluid {
+  max-width: 1440px;
+  background: url(../img/gray-section.svg) no-repeat center center;
+  -webkit-background-size: cover;
+  min-height: 500px;
+  background-size: cover;
+  .magicBottleContainer {
+    p {
+      margin-top: 120px;
+      line-height: 47px;
+      font-size: 30px;
+      .white;
+    }
+  }
+}
+
+/*  magicBottle Section End */
+
+/*  beraProducts Section Start */
+.beraProductsFluid {
+  background: #ffffff;
+  .beraProductsContainer {
+    padding-bottom: 165px;
+    img {
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: -120px;
+    }
+    p {
+      .rubikR;
+      font-size: 30px;
+      color: #959595;
+      text-align: right;
+      margin-right: 80px;
+    }
+  }
+}
+
+/*  beraProducts Section End */
+
+/*  Footer Section Start */
+footer {
+  .footerFluid {
+    max-width: 1440px;
+    background: url(../img/footerFormBg.png) no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding-bottom: 130px;
+    .footerContainer {
+      form {
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  }
+
+}
+
+/*  Footer Section End */
+
+@media (min-width: 0px) and (max-width: 320px) {
+
+  /*Header Section Start*/
+  header {
+    border-bottom: 3px solid #343741;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    .headerFluid {
+      .headerContainer {
+        .logo {
+          a {
+            img {
+              height: 45px;
+            }
+          }
+        }
+        .headerWrap {
+          margin-bottom: 15px;
+        }
+        .leftHeader {
+        }
+        .openNav {
+          display: block;
+          margin-top: -14px;
+          font-size: 35px;
+          cursor: pointer;
+          .lightBlue;
+        }
+        .navMenu {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #ffffff;
+          overflow-x: hidden;
+          transition: 0.4s;
+          padding-top: 90px;
+          text-align: center;
+
+          .closeBtnMenu {
+            display: block;
+            position: absolute;
+            top: 5px;
+            right: 5%;
+            font-size: 63px;
+            margin-left: 50px;
+            .lightBlue;
+            cursor: pointer;
+          }
+          .ulNav {
+            display: block;
+            li {
+              margin-right: 5%;
+              margin-left: 5%;
+              margin-bottom: 15px;
+              &:last-child {
+                margin-right: 5%;
+              }
+              a {
+                display: block;
+                font-size: 17px;
+                color: #ffffff;
+                line-height: 30px;
+                background: #30323a;
+                text-transform: uppercase;
+                padding: 18px 0;
+                letter-spacing: 2px;
+              }
+            }
+          }
+
+        }
+
+      }
+    }
+  }
+
+  /*Header Section End*/
+  /* Bear Product Section Start */
+  .bearProductFluid {
+    min-height: 0px;
+    background: #ffffff;
+    padding-top: 80px;
+    .bearProductContainer {
+      .bottle {
+        img {
+          display: block;
+          height: 500px;
+          margin-top: 70px;
+        }
+      }
+      .productDesc {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        line-height: 43px;
+      }
+    }
+  }
+
+  /* Bear Product Section End */
+  /* Form Section Start*/
+  form {
+    max-width: 100%;
+    p {
+      font-size: 27px;
+      text-align: center;
+    }
+  }
+
+  /* Form Section Start*/
+  /* nutrients Section Start*/
+  .nutrientsFluid {
+    .nutrientsContainer {
+      .nutrientsWrap {
+        .nutrientsInner {
+          flex-wrap: wrap;
+          text-align: center;
+          align-items: center;
+          flex-direction: column;
+          width: 100%;
+          img {
+            margin-right: 0;
+          }
+          .nutrientsInnerPB {
+            margin-top: 20px;
+            margin-bottom: 4px;
+          }
+        }
+        .moreProteinInner {
+          align-self: flex-end;
+          display: flex;
+          justify-content: space-between
+        }
+      }
+
+      .nutrientsWrapBottom {
+        margin-top: 40px;
+        justify-content: space-around;
+      }
+    }
+  }
+
+  /* nutrients Section End*/
+  /*  magicBottle Section Start */
+  .magicBottleFluid {
+    min-height: 0;
+    background: #707070;
+    .magicBottleContainer {
+      p {
+        margin-top: 54px;
+        margin-bottom: 54px;
+
+      }
+    }
+  }
+
+  /*  magicBottle Section End */
+  /*  beraProducts Section Start */
+  .beraProductsFluid {
+    .beraProductsContainer {
+      img {
+        margin-top: 0px;
+      }
+      p {
+
+        text-align: left;
+      }
+    }
+  }
+
+  /*  beraProducts Section End */
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+  /*Header Section Start*/
+  header {
+    border-bottom: 3px solid #343741;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    .headerFluid {
+      .headerContainer {
+        .logo {
+          a {
+            img {
+              height: 45px;
+            }
+          }
+        }
+        .headerWrap {
+          margin-bottom: 15px;
+        }
+        .leftHeader {
+        }
+        .openNav {
+          display: block;
+          margin-top: -14px;
+          font-size: 35px;
+          cursor: pointer;
+          .lightBlue;
+        }
+        .navMenu {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #ffffff;
+          overflow-x: hidden;
+          transition: 0.4s;
+          padding-top: 90px;
+          text-align: center;
+
+          .closeBtnMenu {
+            display: block;
+            position: absolute;
+            top: 5px;
+            right: 5%;
+            font-size: 63px;
+            margin-left: 50px;
+            .lightBlue;
+            cursor: pointer;
+          }
+          .ulNav {
+            display: block;
+            li {
+              margin-right: 5%;
+              margin-left: 5%;
+              margin-bottom: 15px;
+              &:last-child {
+                margin-right: 5%;
+              }
+              a {
+                display: block;
+                font-size: 17px;
+                color: #ffffff;
+                line-height: 30px;
+                background: #30323a;
+                text-transform: uppercase;
+                padding: 18px 0;
+                letter-spacing: 2px;
+              }
+            }
+          }
+
+        }
+
+      }
+    }
+  }
+
+  /*Header Section End*/
+  /* Header Bear Product Section Start */
+  .bearProductFluid {
+    min-height: 0px;
+    background: #ffffff;
+    padding-top: 80px;
+    .bearProductContainer {
+      .bottle {
+        img {
+          height: 500px;
+          display: block;
+          margin-top: 70px;
+        }
+      }
+      .productDesc {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        line-height: 43px;
+      }
+    }
+  }
+
+  /* Header Bear Product Section End */
+  /* Form Section Start*/
+  form {
+    max-width: 100%;
+    p {
+      font-size: 27px;
+      text-align: center;
+    }
+  }
+
+  /* Form Section Start*/
+  /* nutrients Section Start*/
+  .nutrientsFluid {
+    .nutrientsContainer {
+      .nutrientsWrap {
+        .nutrientsInner {
+          flex-wrap: wrap;
+          text-align: center;
+          align-items: center;
+          flex-direction: column;
+          width: 100%;
+          img {
+            margin-right: 0;
+          }
+          .nutrientsInnerPB {
+            margin-top: 20px;
+            margin-bottom: 4px;
+          }
+        }
+        .moreProteinInner {
+          align-self: flex-end;
+          display: flex;
+          justify-content: space-between
+        }
+      }
+
+      .nutrientsWrapBottom {
+        margin-top: 40px;
+        justify-content: space-around;
+      }
+    }
+  }
+
+  /* nutrients Section End*/
+  /*  magicBottle Section Start */
+  .magicBottleFluid {
+    min-height: 0;
+    background: #707070;
+    .magicBottleContainer {
+      p {
+        margin-top: 54px;
+        margin-bottom: 54px;
+
+      }
+    }
+  }
+
+  /*  magicBottle Section End */
+  /*  beraProducts Section Start */
+  .beraProductsFluid {
+    .beraProductsContainer {
+      img {
+        margin-top: 0px;
+      }
+      p {
+
+        text-align: left;
+      }
+    }
+  }
+
+  /*  beraProducts Section End */
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+  /*Header Section Start*/
+  header {
+    border-bottom: 3px solid #343741;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    .headerFluid {
+      .headerContainer {
+        .logo {
+          a {
+            img {
+              height: 45px;
+            }
+          }
+        }
+        .headerWrap {
+          margin-bottom: 15px;
+        }
+        .leftHeader {
+        }
+        .openNav {
+          display: block;
+          margin-top: -14px;
+          font-size: 35px;
+          cursor: pointer;
+          .lightBlue;
+        }
+        .navMenu {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #ffffff;
+          overflow-x: hidden;
+          transition: 0.4s;
+          padding-top: 90px;
+          text-align: center;
+
+          .closeBtnMenu {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 5%;
+            font-size: 70px;
+            margin-left: 50px;
+            .lightBlue;
+            cursor: pointer;
+          }
+          .ulNav {
+            display: block;
+            li {
+              margin-right: 5%;
+              margin-left: 5%;
+              margin-bottom: 15px;
+              &:last-child {
+                margin-right: 5%;
+              }
+              a {
+                display: block;
+                font-size: 25px;
+                color: #ffffff;
+                line-height: 30px;
+                background: #30323a;
+                text-transform: uppercase;
+                padding: 20px 5px;
+                letter-spacing: 2px;
+              }
+            }
+          }
+
+        }
+
+      }
+    }
+  }
+
+  /*Header Section End*/
+  /* Form Section Start*/
+  form {
+    max-width: 100%;
+    p {
+      text-align: center;
+    }
+  }
+
+  /* Form Section Start*/
+  /* Header Bear Product Section Start */
+  .bearProductFluid {
+    min-height: 0px;
+    background: #ffffff;
+    padding-top: 80px;
+    .bearProductContainer {
+      .bottle {
+        img {
+          display: block;
+          height: 500px;
+          margin-top: 70px;
+
+        }
+      }
+      .productDesc {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        line-height: 43px;
+      }
+    }
+  }
+
+  /* Header Bear Product Section End */
+  /* nutrients Section Start*/
+  .nutrientsFluid {
+    .nutrientsContainer {
+      .nutrientsWrap {
+        .nutrientsInner {
+          flex-wrap: wrap;
+          text-align: center;
+          align-items: center;
+          flex-direction: column;
+          width: 100%;
+          img {
+            margin-right: 0;
+          }
+          .nutrientsInnerPB {
+            margin-top: 20px;
+            margin-bottom: 4px;
+          }
+        }
+        .moreProteinInner {
+          align-self: flex-end;
+          display: flex;
+          justify-content: space-between
+        }
+      }
+
+      .nutrientsWrapBottom {
+        margin-top: 40px;
+        justify-content: space-around;
+      }
+    }
+  }
+
+  /* nutrients Section End*/
+  /*  magicBottle Section Start */
+  .magicBottleFluid {
+    min-height: 0;
+    background: #707070;
+    .magicBottleContainer {
+      p {
+        margin-top: 54px;
+        margin-bottom: 54px;
+
+      }
+    }
+  }
+
+  /*  magicBottle Section End */
+  /*  beraProducts Section Start */
+  .beraProductsFluid {
+    .beraProductsContainer {
+      img {
+        margin-top: 0px;
+      }
+      p {
+
+        text-align: left;
+      }
+    }
+  }
+
+  /*  beraProducts Section End */
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  header {
+    .headerFluid {
+      .headerContainer {
+        .navMenu {
+          .ulNav {
+            li {
+              margin-right: 39px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* Form Section Start*/
+  form {
+    max-width: 100%;
+  }
+
+  /* Form Section Start*/
+  /* Header Bear Product Section Start */
+  .bearProductFluid {
+    background: #ffffff;
+    min-height: 0;
+    .bearProductContainer {
+      .bottle {
+        img {
+          display: block;
+          margin-top: 70px;
+          height: 500px;
+        }
+      }
+      .productDesc {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        line-height: 43px;
+      }
+    }
+  }
+
+  /* Header Bear Product Section End */
+  /* nutrients Section Start*/
+  .nutrientsFluid {
+    .nutrientsContainer {
+      .nutrientsWrap {
+        .nutrientsInner {
+          flex-wrap: wrap;
+          text-align: center;
+          align-items: center;
+          flex-direction: column;
+          width: 50%;
+          img {
+            margin-right: 0;
+          }
+          .nutrientsInnerPB {
+            margin-top: 20px;
+            margin-bottom: 4px;
+          }
+        }
+        .moreProteinInner {
+          align-self: flex-end;
+          display: flex;
+          justify-content: space-between
+        }
+      }
+
+      .nutrientsWrapBottom {
+        margin-top: 40px;
+        justify-content: space-around;
+      }
+    }
+  }
+
+  /* nutrients Section End*/
+  /*  beraProducts Section Start */
+  .beraProductsFluid {
+    .beraProductsContainer {
+      img {
+        margin-top: 0px;
+      }
+      p {
+
+        text-align: left;
+      }
+    }
+  }
+
+  /*  beraProducts Section End */
+
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+
+  /* Header Bear Product Section Start */
+  .bearProductFluid {
+    .bearProductContainer {
+      .bottle {
+        img {
+          margin-top: 100px;
+        }
+      }
+
+      .productDesc {
+        margin-top: 100px;
+      }
+    }
+
+  }
+
+  /* Header Bear Product Section End */
+  /* nutrients Section Start*/
+  .nutrientsFluid {
+    .nutrientsContainer {
+      .nutrientsWrapBottom {
+        justify-content: space-around;
+      }
+    }
+  }
+
+  /* nutrients Section End*/
+
+}

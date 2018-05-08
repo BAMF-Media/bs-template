@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="icon" href="lp-assets/img/iconSmall.png">
+
+    <!--Seo start-->
+    <!--for Google start-->
+    <meta name="copyright" content="Bear Squeeze LLC. All Rights Reserved">
+    <meta name="description"
+          content="Bear Squeeze is launching on IndieGoGo on January 16th, 2018. Subscribe below for early access.">
+    <meta name="keywords" content="Bear Squeeze, Nutrition, IndieGoGo, Fuel Greatness,Keto Meal Shake">
+    <meta name="robots" content="index,follow">
+    <meta name="DC.title" content="Bear Squeeze">
+    <!--for Google end-->
+
+    <!--for Facebook start-->
+    <meta name="og:locale" content="en_US"/>
+    <meta name="og:type" content="article"/>
+    <meta name="og:title" content="Bear Squeeze"/>
+    <meta name="og:description"
+          content="Bear Squeeze is launching on IndieGoGo on January 16th, 2018. Subscribe below for early access."/>
+    <meta name="og:url" content=""/>
+    <meta name="article:section" content="Bear Squeeze"/>
+    <meta name="og:image" content=""/>
+    <meta name="og:site_name" content="Bear Squeeze"/>
+    <!--for Facebook end-->
+
+    <!--for Twitter start-->
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@publisher_handle">
+    <meta name="twitter:title" content="Page Title">
+    <meta name="twitter:description" content="Page description less than 200 characters">
+    <meta name="twitter:creator" content="@author_handle">
+    <meta name="twitter:image" content="http://www.example.com/image.jpg">
+    <!--for Twitter end-->
+    <!-- Seo end-->
+
+    <title>Bear Squeeze | Referral</title>
+    <!-- Error Validation-->
+    <!--Loader page start-->
+    <link rel="stylesheet" href="lp-assets/css/loaderPage.css">
+    <!-- Bootstrap -->
+    <link href="lp-assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="lp-assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lp-assets/css/referalStyle.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+        header .headerFluid {
+            min-height: 65px;
+            background: #fff;
+            position: fixed;
+            width: 100%;
+            z-index: 99;
+        }
+
+        /*.top-right-cta {
+            margin-top: 53px;
+        }*/
+
+        .referalFluid .referalContainer .h2 {
+            font-family: 'Rubik Medium';
+            font-weight: normal;
+            font-weight: 500;
+            font-size: 39px;
+            color: #55c5e7;
+            margin-bottom: -25px;
+            margin-top: -32px;
+        }
+
+        .referalFluid .referalContainer .bearBottleReferal {
+            position: relative;
+            margin-top: -150px;
+            margin-bottom: 150px;
+        }
+
+        .referalFluid .referalContainer .bearBottleReferal .cho-bottom {
+            top: 520px;
+            left: 240px;
+            height: 400px;
+            z-index: 2;
+            display: none;
+        }
+
+        .KickstarterFluid {
+            -webkit-box-ordinal-group: 3;
+            -webkit-order: 2;
+            -moz-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+            order: 2;
+            padding-top: 90px;
+            min-height: 65px;
+            width: 100%;
+            background: #6dd4ef;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: 24px;
+            font-family: 'Rubik Light';
+            font-weight: 300;
+            font-weight: normal;
+            color: #1c1c1c;
+        }
+
+        .referalFluid {
+            padding-top: 130px;
+        }
+
+        header .headerFluid {
+            min-height: 65px;
+            background: transparent;
+            position: fixed;
+            width: 100%;
+            z-index: 99;
+        }
+
+        header .headerFluid {
+            border-bottom: 0px solid #3437410f;
+            min-height: 65px;
+        }
+
+        .reward-h2 {
+            font-family: 'Rubik Medium';
+            font-weight: normal;
+            font-weight: 500;
+            font-size: 50px;
+            color: #55c5e7;
+            margin-bottom: 0;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        header .KickstarterFluid {
+        -webkit-box-ordinal-group: 3;
+        -webkit-order: 2;
+        -moz-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+        padding-top: 90px;
+        min-height: 65px;
+        width: 100%;
+        background: #6dd4ef;
+        /* color: #fff !important; */
+    }
+
+
+    </style>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!--Loader Page start-->
+    <script src="lp-assets/js/loaderPage.js"></script>
+    <!--Loader Page end-->
+
+
+    <!-- AUTIPILOT TRACKING CODE -->
+    <script type="text/javascript">(function (o) {
+        var b = "https://api.autopilothq.com/anywhere/",
+            t = "940e1e3300c54fd7a0c5ceefea6b0523f71e30e40cd34633b9ec351d7c95081c", a = window.AutopilotAnywhere = {
+                _runQueue: [], run: function () {
+                    this._runQueue.push(arguments);
+                }
+            }, c = encodeURIComponent, s = "SCRIPT", d = document, l = d.getElementsByTagName(s)[0],
+            p = "t=" + c(d.title || "") + "&u=" + c(d.location.href || "") + "&r=" + c(d.referrer || ""),
+            j = "text/javascript", z, y;
+        if (!window.Autopilot) window.Autopilot = a;
+        if (o.app) p = "devmode=true&" + p;
+        z = function (src, asy) {
+            var e = d.createElement(s);
+            e.src = src;
+            e.type = j;
+            e.async = asy;
+            l.parentNode.insertBefore(e, l);
+        };
+        y = function () {
+            z(b + t + '?' + p, true);
+        };
+        if (window.attachEvent) {
+            window.attachEvent("onload", y);
+        } else {
+            window.addEventListener("load", y, false);
+        }
+    })({});</script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1943494059255487');
+        fbq('track', 'PageView');
+        fbq('track', 'Lead');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=1943494059255487&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-101746561-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-101746561-1');
+    </script>
+    <!-- END - Google Analytics -->
+
+
+    <!-- Reddit Conversion Pixel -->
+    <script>
+
+        var i=new Image();i.src="https://alb.reddit.com/snoo.gif?q=CAAHAAABAAoACQAAAAuPNz_6AA==&s=8CbnInBGKfW7u2EBN5YtcYhgbjW1tuUK0RDcffViEL8=";
+
+    </script>
+
+    <noscript>
+
+        <img height="1" width="1" style="display:none"
+
+             src="https://alb.reddit.com/snoo.gif?q=CAAHAAABAAoACQAAAAuPNz_6AA==&s=8CbnInBGKfW7u2EBN5YtcYhgbjW1tuUK0RDcffViEL8="/>
+
+    </noscript>
+
+    <!-- DO NOT MODIFY -->
+
+    <!-- End Reddit Conversion Pixel -->
+
+
+
+</head>
+<body>
+
+<div class="loader">
+    <div class="loaderGir">
+    </div>
+    <p class="loaderTExt">Loading…</p>
+</div>
+
+<div class="container-fluid KickstarterFluid">
+    <div class="container KickstarterContainer">
+        <p class="Kickstarter text-center" style="color: #fff;">
+            Bear Squeeze has raised over $150,000 on<span><a href="https://www.indiegogo.com/projects/bear-squeeze-powerful-nutrition-in-seconds-food-fitness"> IndieGoGo! </a></span><span>Refer friends with your custom link below.</span>
+        </p>
+    </div>
+</div>
+
+<!-- Header Section Start -->
+<header id="header">
+
+    <div class="container-fluid headerFluid">
+        <div class="container headerContainer">
+            <div class="headerWrap">
+                <div class="logo">
+                    <a href="https://bearsqueeze.co/home">
+                        <!-- <img src="lp-assets/img/logo.png" alt="Logo" class="bs-logo"> -->
+                        <img src="lp-assets/img/logo.svg" alt="Logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Header Section End -->
+
+<!--Referal Section Start -->
+
+<div class="container-fluid referalFluid">
+    <div class="container referalContainer">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6 bearBottleReferal">
+                <!--<img src="lp-assets/img/bear-bottle-referalBg.png" alt="Bottle" class="img-responsive">-->
+                <img src="lp-assets/img/pumpkin-sds.png" alt="pumpkin" class="img-responsive pumpkin">
+                <img src="lp-assets/img/cho-top.png" alt="cho-top" class="img-responsive cho-top">
+                <img src="lp-assets/img/ori-mid.png" alt="ori-mid" class="img-responsive ori-mid">
+                <img src="lp-assets/img/coconut.png" alt="coconut" class="img-responsive coconut">
+                <img src="lp-assets/img/cho-bottom.png" alt="cho-bottom" class="img-responsive cho-bottom">
+                <img src="lp-assets/img/KaleHeader.png" alt="kale" class="img-responsive kale">
+
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <!-- <h1 class="h1" id="firstname_hey"></h1> -->
+                <h2 class="h2">Invite Friends = Free Bear Squeeze</h2>
+
+                <div id="invite" data-vl-widget="embedForm" style="margin-bottom: 40px;"></div>
+                <!-- <div class="placeInLine">
+                    <p class="placeInLineDesc text-center">Your place in line</p>
+                    <p class="placeInLineNumbers text-center" id="entries">0</p>
+                </div>
+                <p>Get to the front of the line to get more from Bear Squeeze by inviting your friends.</p>
+                <div class="social">
+                    <div class="socialInner">
+                        <a class="tweet_button">
+                            <img src="lp-assets/img/TW.png" alt="Tweet" class="img-responsive"><span>Tweet</span>
+                        </a>
+                    </div>
+                    <div class="socialInner">
+                        <a onclick="VL.popup.share(520, 350)" style="cursor:pointer">
+                            <img src="lp-assets/img/FB.png" alt="Share" class="img-responsive"><span>Share</span>
+                        </a>
+                    </div>
+                    <div class="socialInner">
+                        <a class="messenger_send" style="cursor:pointer">
+                            <img src="lp-assets/img/Messenger.png" alt="Message"
+                                 class="img-responsive"><span>Message</span>
+                        </a>
+                    </div>
+                </div>
+
+                <p>Share your unique link:</p>
+                <button id="copy" class="yourReferralCode" data-clipboard-text=""></button>
+                <p class="copiedWrapper">&nbsp;<span class="copied">Copied!</span></p>
+
+                <form id="email_invite_form">
+                    <p>Invite your friends by email:</p>
+                    <div class="referalInput">
+                        <input type="email" class="yourReferralEmail"
+                               placeholder="Enter email addresses, separated by commas" id="email_invite_list"></input>
+                        <input type="submit" class="yourReferralSubmit" value=""></input>
+                    </div>
+                </form> -->
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="container-fluid">
+
+        <h2 class="reward-h2">Your Rewards</h2>
+
+       <div data-vl-widget="milestoneWidget"></div>
+
+</div>
+
+<!-- Bear Product Section End -->
+
+
+<!-- shareFluid Start-->
+<div class="container-fluid shareFluid" style="margin-top: 50px;">
+    <div class="container shareContainer">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="h2 text-center">Share the Bear</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 inviteLeft">
+
+                <!--Invite 1 friend start-->
+                <div class="inviteWrap">
+                    <h3 class="h3 invite1Title">Invite 1 Friend</h3>
+                    <div class="inviteBlock inviteBlock1">
+                        <div class="inviteBlockTop">
+                            <p class="title">12-pack Raffle</p>
+                            <img src="lp-assets/img/originalBear.png" alt="blueBearSMall" class="originalBear">
+                        </div>
+                        <div class="inviteBlockBottom">
+                            <p class="desc">Invite 1 friend for your chance to win a 12-pack (Each friend you invite = 1
+                                raffle ticket. Invite more to up your odds.)</p>
+                            <button class="inviteBtn">Invite</button>
+                        </div>
+                    </div>
+                </div>
+                <!--Invite 1 friend end-->
+
+                <!--Invite 20 friend start-->
+                <div class="inviteWrap">
+                    <h3 class="h3">Invite 20 Friends</h3>
+                    <div class="inviteBlock">
+                        <div class="inviteBlockTop">
+                            <p class="title">Free 6-Pack</p>
+                            <img src="lp-assets/img/chocolateSmall.png" alt="chocolateSmallBear" class="chocolateSmall">
+                        </div>
+
+                        <div class="inviteBlockBottom">
+                            <p class="desc">Invite 20 friends for 1 free six pack</p>
+                            <button class="inviteBtn">Invite</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Invite 20 friend end-->
+
+            </div>
+            <div class="col-md-6 inviteRight">
+                <!--Invite 7 friend start-->
+                <div class="inviteWrap inviteWrap7Friends">
+                    <h3 class="h3 invite7Title">Invite 7 Friend</h3>
+                    <div class="inviteBlock inviteBlock7">
+                        <div class="inviteBlockTop">
+                            <p class="title">Free Bottle</p>
+                            <img src="lp-assets/img/bottleSmall.png" alt="blueBearSMall" class="bottleSmall">
+                        </div>
+
+                        <div class="inviteBlockBottom">
+                            <p class="desc">Invite 7 friends and get 1 free bottle</p>
+                            <button class="inviteBtn">Invite</button>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Invite 7 friend end-->
+
+                <!--Invite 30 friend start-->
+
+                <div class="inviteWrap">
+                    <h3 class="h3 ">Invite 30 Friend</h3>
+                    <div class="inviteBlock ">
+                        <div class="inviteBlockTop">
+                            <p class="title">Free 12-Pack</p>
+                            <img src="lp-assets/img/originalBear.png" alt="blueBearSMall" class="originalBear">
+                        </div>
+
+                        <div class="inviteBlockBottom">
+                            <p class="desc">Invite 30 friends for 1 free 12 pack</p>
+                            <button class="inviteBtn">Invite</button>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Invite 30 friend end-->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="invite50FriendsWrap">
+                    <div class="inviteWrap">
+                        <h3 class="h3 invite50Title">Invite 50 Friends</h3>
+                        <div class="inviteBlock">
+                            <div class="inviteBlockTop">
+                                <p class="title text-uppercase">Vip Hollywood launch party</p>
+                                <img src="lp-assets/img/DJ.gif" alt="" class="img-responsive djImage">
+                            </div>
+                            <div class="inviteBlockBottom">
+                                <p class="desc">Invite 50+ friends and get a chance to win a trip to the VIP Hollywood
+                                    launch party</p>
+                                <button class="inviteBtn">Invite</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+
+
+                <!-- <div class="socialInner">
+                    <a class="tweet_button">
+                        <img src="lp-assets/img/TW.png" alt="Tweet" class="img-responsive"><span>Tweet</span>
+                    </a>
+                </div>
+                <div class="socialInner">
+                    <a onclick="VL.popup.share(520, 350)" style="cursor:pointer">
+                        <img src="lp-assets/img/FB.png" alt="Share" class="img-responsive"><span>Share</span>
+                    </a>
+                </div>
+                <div class="socialInner">
+                    <a class="messenger_send" style="cursor:pointer">
+                        <img src="lp-assets/img/Messenger.png" alt="Message"
+                             class="img-responsive"><span>Message</span>
+                    </a>
+                </div> -->
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- shareFluid end-->
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="lp-assets/js/bootstrap.min.js"></script>
+ <script src="lp-assets/js/menuScript.js"></script>
+<script src="lp-assets/js/libs/clipboard.min.js"></script>
+<script src="lp-assets/js/clipboardScript.js"></script>
+<script src="lp-assets/js/common.js"></script>
+
+
+<!-- Custom menuScript.js BEGIN -->
+<!-- VL snippet -->
+<script>!function(){var a=window.VL=window.VL||{};return a.instances=a.instances||{},a.invoked?void(window.console&&console.error&&console.error("VL snippet loaded twice.")):(a.invoked=!0,void(a.load=function(b,c,d){var e={};e.publicToken=b,e.config=c||{};var f=document.createElement("script");f.type="text/javascript",f.id="vrlps-js",f.defer=!0,f.src="https://app.viral-loops.com/client/vl/vl.min.js";var g=document.getElementsByTagName("script")[0];return g.parentNode.insertBefore(f,g),f.onload=function(){a.setup(e),a.instances[b]=e},e.identify=e.identify||function(a,b){e.afterLoad={identify:{userData:a,cb:b}}},e.pendingEvents=[],e.track=e.track||function(a,b){e.pendingEvents.push({event:a,cb:b})},e.pendingHooks=[],e.addHook=e.addHook||function(a,b){e.pendingHooks.push({name:a,cb:b})},e.$=e.$||function(a){e.pendingHooks.push({name:"ready",cb:a})},e}))}();var campaign=VL.load("uLEzjlNxwPrFKAFMIkEnx5PnRkI",{autoLoadWidgets:!0});</script>
+
+<!-- TODO replace with your facebook snippet that includes your appId -->
+<script>
+    window.fbAsyncInit = function () {
+        FB.init({
+            appId: "547498552255957",
+            xfbml: true,
+            version: "v2.8"
+        });
+    };
+
+    (function (d, s, id) {
+        var js;
+        var fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.defer = true;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    })(document, "script", "facebook-jssdk");
+</script>
+
+<script>
+
+    $(".inviteBtn").click(function() {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+
+</script>
+
+</body>
+</html>

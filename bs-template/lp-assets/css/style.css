@@ -1,0 +1,2297 @@
+/*============    RESET    ===========*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+ol,
+ul {
+  list-style: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+a:hover,
+a:link,
+a:focus,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+/* hide horizontal scroll */
+body {
+  overflow-x: hidden;
+}
+/*============    FONTS    ===========*/
+@font-face {
+  font-family: 'Rubik Medium';
+  src: url('../fonts/Rubik-Medium.eot');
+  src: url('../fonts/Rubik-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/Rubik-Medium.woff') format('woff'), url('../fonts/Rubik-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Rubik Regular';
+  src: url('../fonts/Rubik-Regular.eot');
+  src: url('../fonts/Rubik-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Rubik-Regular.woff') format('woff'), url('../fonts/Rubik-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Rubik Light';
+  src: url('../fonts/Rubik-Light.eot');
+  src: url('../fonts/Rubik-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/Rubik-Light.woff') format('woff'), url('../fonts/Rubik-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Rubik Bold';
+  src: url('../fonts/Rubik-Bold.eot');
+  src: url('../fonts/Rubik-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Rubik-Bold.woff') format('woff'), url('../fonts/Rubik-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+/*Variables for fonts start*/
+.rubikL {
+  font-family: 'Rubik Light';
+  font-weight: 300;
+  font-weight: normal;
+}
+.rubikM {
+  font-family: 'Rubik Medium';
+  font-weight: normal;
+  font-weight: 500;
+}
+.rubikR {
+  font-family: 'Rubik Regular';
+  font-weight: normal;
+}
+.rubikB {
+  font-family: 'Rubik Bold';
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Industry Inc Base';
+  src: url('../fonts/IndustryInc-Base.woff2') format('woff2'), url('../fonts/IndustryInc-Base.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.industryBase {
+  font-family: 'Industry Inc Base';
+  font-weight: normal;
+  font-style: normal;
+}
+/*Variables for fonts end*/
+/*Variables for colors start*/
+.bgWhite {
+  background: #ffffff;
+}
+.white {
+  color: #ffffff;
+}
+.lightBlue {
+  color: #343741;
+}
+.darkBlue {
+  color: #30323a;
+}
+.blue {
+  color: #5eaccf;
+}
+.grey {
+  color: #545454;
+}
+.bgLighterBLue {
+  background: #60d0f0;
+}
+/*Variables for colors end*/
+.h1 {
+  font-family: 'Rubik Bold';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 110px;
+  line-height: 1.2em;
+}
+.h2 {
+  font-family: 'Rubik Medium';
+  font-weight: normal;
+  font-weight: 500;
+  font-size: 93px;
+  line-height: 1.2;
+}
+.h4 {
+  font-family: 'Rubik Medium';
+  font-weight: normal;
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 1.2em;
+}
+p {
+  font-family: 'Rubik Light';
+  font-weight: 300;
+  font-weight: normal;
+}
+span {
+  font-family: 'Rubik Medium';
+  font-weight: normal;
+  font-weight: 500;
+}
+.container-fluid {
+  background: #ffffff;
+}
+/* Form top Section Start*/
+.participation_form {
+  display: flex;
+  flex-direction: column;
+  background: rgba(86, 86, 86, 0.9);
+  max-width: 520px;
+  padding: 33px 33px 80px 33px;
+  position: relative;
+}
+.participation_form p {
+  line-height: 36px;
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.participation_form .input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  font-family: 'Rubik Light';
+  font-weight: 300;
+  font-weight: normal;
+  font-size: 24px;
+  color: #ffffff;
+  padding-bottom: 7px;
+  margin-top: 20px;
+  padding-left: 6px;
+}
+.participation_form ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-family: 'Rubik Light';
+  font-weight: 300;
+  font-weight: normal;
+  font-size: 24px;
+  color: #ffffff;
+}
+.participation_form ::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: 'Rubik Light';
+  font-weight: 300;
+  font-weight: normal;
+  font-size: 24px;
+  color: #ffffff;
+}
+.participation_form :-ms-input-placeholder {
+  /* IE 10+ */
+  font-family: 'Rubik Light';
+  font-weight: 300;
+  font-weight: normal;
+  font-size: 24px;
+  color: #ffffff;
+}
+.participation_form :-moz-placeholder {
+  /* Firefox 18- */
+  font-family: 'Rubik Light';
+  font-weight: 300;
+  font-weight: normal;
+  font-size: 24px;
+  color: #ffffff;
+}
+.participation_form .input::-webkit-input-placeholder {
+  text-indent: 0px;
+  transition: text-indent 0.6s ease;
+}
+.participation_form .input::-moz-placeholder {
+  text-indent: 0px;
+  transition: text-indent 0.6s ease;
+}
+.participation_form .input:-moz-placeholder {
+  text-indent: 0px;
+  transition: text-indent 0.6s ease;
+}
+.participation_form .input:-ms-input-placeholder {
+  text-indent: 0px;
+  transition: text-indent 0.6s ease;
+}
+.participation_form .input:focus::-webkit-input-placeholder {
+  text-indent: 700px;
+  transition: text-indent 0.6s ease;
+}
+.participation_form .input:focus::-moz-placeholder {
+  text-indent: 700px;
+  transition: text-indent 0.6s ease;
+}
+.participation_form .input:focus:-moz-placeholder {
+  text-indent: 700px;
+  transition: text-indent 0.6s ease;
+}
+.participation_form .input:focus:-ms-input-placeholder {
+  text-indent: 700px;
+  transition: text-indent 0.6s ease;
+}
+.participation_form .submit {
+  position: absolute;
+  bottom: -35px;
+  left: 21%;
+  max-width: 300px;
+  background: #ff9600;
+  border: none;
+  color: #ffffff;
+  font-family: 'Rubik Medium';
+  font-weight: normal;
+  font-weight: 500;
+  font-size: 35px;
+  padding: 20px 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* Form top Section End*/
+/* Form Section Start*/
+.form {
+  display: flex;
+  flex-direction: column;
+  background: rgba(86, 86, 86, 0.8);
+  max-width: 520px;
+  padding: 33px 33px 80px 33px;
+  position: relative;
+}
+.form p {
+  line-height: 36px;
+  font-size: 30px;
+  color: #ffffff;
+}
+.form .input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  font-family: 'Rubik Light';
+  font-weight: 300;
+  font-weight: normal;
+  font-size: 24px;
+  color: #ffffff;
+  padding-bottom: 7px;
+  margin-top: 20px;
+  padding-left: 6px;
+}
+.form ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-family: 'Rubik Light';
+  font-weight: 300;
+  font-weight: normal;
+  font-size: 24px;
+  color: #ffffff;
+}
+.form ::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: 'Rubik Light';
+  font-weight: 300;
+  font-weight: normal;
+  font-size: 24px;
+  color: #ffffff;
+}
+.form :-ms-input-placeholder {
+  /* IE 10+ */
+  font-family: 'Rubik Light';
+  font-weight: 300;
+  font-weight: normal;
+  font-size: 24px;
+  color: #ffffff;
+}
+.form :-moz-placeholder {
+  /* Firefox 18- */
+  font-family: 'Rubik Light';
+  font-weight: 300;
+  font-weight: normal;
+  font-size: 24px;
+  color: #ffffff;
+}
+.form .input::-webkit-input-placeholder {
+  text-indent: 0px;
+  transition: text-indent 0.6s ease;
+}
+.form .input::-moz-placeholder {
+  text-indent: 0px;
+  transition: text-indent 0.6s ease;
+}
+.form .input:-moz-placeholder {
+  text-indent: 0px;
+  transition: text-indent 0.6s ease;
+}
+.form .input:-ms-input-placeholder {
+  text-indent: 0px;
+  transition: text-indent 0.6s ease;
+}
+.form .input:focus::-webkit-input-placeholder {
+  text-indent: 700px;
+  transition: text-indent 0.6s ease;
+}
+.form .input:focus::-moz-placeholder {
+  text-indent: 700px;
+  transition: text-indent 0.6s ease;
+}
+.form .input:focus:-moz-placeholder {
+  text-indent: 700px;
+  transition: text-indent 0.6s ease;
+}
+.form .input:focus:-ms-input-placeholder {
+  text-indent: 700px;
+  transition: text-indent 0.6s ease;
+}
+.form .submit {
+  position: absolute;
+  bottom: -35px;
+  left: 21%;
+  max-width: 300px;
+  background: #ff9600;
+  border: none;
+  color: #ffffff;
+  font-family: 'Rubik Medium';
+  font-weight: normal;
+  font-weight: 500;
+  font-size: 35px;
+  padding: 20px 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.form .textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  font-family: 'Rubik Light';
+  font-weight: 300;
+  font-weight: normal;
+  font-size: 24px;
+  color: #ffffff;
+  margin-top: 20px;
+  padding-bottom: 7px;
+  padding-left: 6px;
+  min-height: 110px;
+  resize: vertical;
+  overflow-y: hidden;
+}
+/* Form Section End*/
+/* Header Section Start*/
+header {
+  display: flex;
+  flex-direction: column;
+}
+header .top-cta-btn {
+  display: none;
+  /* position: absolute; */
+  /*  bottom: 24px;
+      left: 0%;
+      right: 0%;*/
+  max-width: 300px;
+  background: #ff9600 !important;
+  border: none;
+  color: #fff !important;
+  margin: 50px auto 0 auto;
+  /*font-weight: bolder;*/
+  font-family: 'Rubik Medium';
+  font-weight: normal;
+  /*font-family: 'Rubik Medium';
+    font-weight: 400;*/
+  font-weight: 500;
+  font-size: 35px;
+  padding: 18px 0px;
+  text-align: center;
+  text-transform: uppercase;
+}
+header .top-right-cta {
+  margin-top: 20px;
+}
+header .KickstarterFluid {
+  order: 2;
+  padding-top: 90px;
+  min-height: 65px;
+  width: 100%;
+  background: #6dd4ef;
+}
+header .KickstarterFluid .KickstarterContainer .Kickstarter {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 24px;
+  font-family: 'Rubik Light';
+  font-weight: 300;
+  font-weight: normal;
+  color: #1c1c1c;
+}
+header .headerFluid {
+  border-bottom: 3px solid #3437410f;
+  min-height: 65px;
+  background: #ffffff;
+}
+header .headerFluid .headerContainer {
+  /*Hide on desktop */
+}
+header .headerFluid .headerContainer .headerWrap {
+  margin-top: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .headerFluid .headerContainer .logo a {
+  cursor: pointer;
+}
+header .headerFluid .headerContainer .logo a img {
+  height: 85px;
+  width: 85px;
+}
+header .headerFluid .headerContainer .leftHeader {
+  display: flex;
+}
+header .headerFluid .headerContainer .openNav {
+  display: none;
+}
+header .headerFluid .headerContainer .navMenu .closeBtnMenu {
+  display: none;
+}
+header .headerFluid .headerContainer .navMenu .ulNav {
+  display: flex;
+  align-items: center;
+}
+header .headerFluid .headerContainer .navMenu .ulNav li {
+  margin-right: 70px;
+}
+header .headerFluid .headerContainer .navMenu .ulNav li:last-child {
+  margin-right: 0px;
+}
+header .headerFluid .headerContainer .navMenu .ulNav li a {
+  font-size: 18px;
+  color: #343741;
+  font-family: 'Rubik Light';
+  font-weight: 300;
+  font-weight: normal;
+  cursor: pointer;
+  -moz-transition: all 0.2s 0.02s ease;
+  -o-transition: all 0.2s 0.02s ease;
+  -webkit-transition: all 0.2s 0.02s ease;
+}
+header .headerFluid .headerContainer .navMenu .ulNav li a:hover {
+  -moz-transition: all 0.2s 0.02s ease;
+  -o-transition: all 0.2s 0.02s ease;
+  -webkit-transition: all 0.2s 0.02s ease;
+}
+/* Header Section End*/
+/* Header Bear Product Section Start */
+.bearProductFluid {
+  min-height: 874px;
+  background: #ffffff;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+.bearProductFluid .bearProductContainer .bottle {
+  position: relative;
+}
+.bearProductFluid .bearProductContainer .bottle img {
+  position: absolute;
+}
+.bearProductFluid .bearProductContainer .bottle .cho-top {
+  top: 80px;
+  left: 240px;
+  height: 400px;
+  z-index: 2;
+}
+.bearProductFluid .bearProductContainer .bottle .ori-mid {
+  top: 290px;
+  left: 90px;
+  height: 400px;
+}
+.bearProductFluid .bearProductContainer .bottle .cho-bottom {
+  top: 520px;
+  left: 240px;
+  height: 400px;
+  z-index: 2;
+}
+.bearProductFluid .bearProductContainer .bottle .pumpkin {
+  top: 150px;
+  left: 110px;
+  height: 150px;
+}
+.bearProductFluid .bearProductContainer .bottle .coconut {
+  top: 465px;
+  left: 430px;
+  height: 140px;
+  z-index: 2;
+}
+.bearProductFluid .bearProductContainer .bottle .kale {
+  top: 80px;
+  right: 50px;
+  height: 250px;
+  z-index: 1;
+}
+.bearProductFluid .bearProductContainer .productDesc {
+  font-size: 44px;
+  color: #343741;
+  line-height: 30px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.bearProductFluid .bearProductContainer .productDesc span {
+  font-family: 'Industry Inc Base';
+  font-weight: normal;
+  font-style: normal;
+}
+.bearProductFluid .bearProductContainer .desc {
+  font-size: 29px;
+  margin-bottom: 28px;
+}
+.bearProductFluid .bearProductContainer .co-founders {
+  font-size: 18px;
+  color: #343741;
+  font-family: 'Rubik Regular';
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+.bearProductFluid .arrowDown {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+/* Header Bear Product Section End */
+/* Section videoYouTubeFluid start*/
+.videoFluid {
+  margin: 0 auto;
+}
+.videoFluid .videoVimeo {
+  text-align: center;
+  position: relative;
+  padding-bottom: 54%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.videoFluid .videoVimeo iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* Section videoYouTubeFluid end*/
+/* productsWrapFluid section start */
+.productsWrapFluid {
+  /* The image used */
+  background-image: url("../img/bearProducts.png");
+  /* Set a specific height */
+  min-height: 794px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center top 70px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.productsWrapFluid .bearProductsImg {
+  display: none;
+}
+/* productsWrapFluid section end */
+/* KetoMealShakeFluid section start */
+.KetoMealShakeFluid {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.KetoMealShakeFluid .KetoMealShakeContainer .nutrientsDesc {
+  font-size: 30px;
+  font-family: 'Rubik Light';
+  font-weight: 300;
+  font-weight: normal;
+  line-height: 40px;
+  color: #545454;
+  padding-top: 50px;
+  padding-bottom: 90px;
+}
+.KetoMealShakeFluid .KetoMealShakeContainer .nutrientsDesc span {
+  ext-transform: uppercase;
+  font-family: 'Rubik Medium';
+  font-weight: normal;
+  font-weight: 500;
+  color: #545454;
+}
+.KetoMealShakeFluid .KetoMealShakeContainer .KetoMealShakeWrap .KetoMealShakeInner .KetoMealShakeInnerDesc {
+  padding-bottom: 30px;
+  display: flex;
+}
+.KetoMealShakeFluid .KetoMealShakeContainer .KetoMealShakeWrap .KetoMealShakeInner .KetoMealShakeInnerDesc img {
+  margin-right: 20px;
+}
+.KetoMealShakeFluid .KetoMealShakeContainer .KetoMealShakeWrap .KetoMealShakeInner .KetoMealShakeInnerDesc p {
+  font-family: 'Rubik Regular';
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.6em;
+  color: #545454;
+}
+/* KetoMealShakeFluid section end */
+/*  magicBottle Section Start */
+.magicBottleFluid {
+  background: url(../img/gray-section.svg) center center no-repeat;
+  -webkit-background-size: cover;
+  min-height: 550px;
+  background-size: cover;
+}
+.magicBottleFluid .magicBottleContainer img {
+  margin-top: -50px;
+  border-radius: 50%;
+  border: 5px solid #6dd4ef;
+}
+.magicBottleFluid .magicBottleContainer p {
+  line-height: 47px;
+  font-size: 24px;
+  color: #fff;
+  padding-bottom: 20px;
+}
+/*  magicBottle Section End */
+/*  beraProducts Section Start */
+.beraProductsFluid {
+  background: #ffffff;
+}
+.beraProductsFluid .beraProductsContainer {
+  padding-bottom: 65px;
+}
+.beraProductsFluid .beraProductsContainer img {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -170px;
+}
+.beraProductsFluid .beraProductsContainer p {
+  font-family: 'Rubik Regular';
+  font-weight: normal;
+  font-size: 30px;
+  color: #959595;
+  text-align: right;
+  margin-right: 80px;
+}
+/*  beraProducts Section End */
+/* nutrients Section Start*/
+.nutrientsFluid {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+.nutrientsFluid .nutrientsContainer .h4 {
+  margin-bottom: 65px;
+}
+.nutrientsFluid .nutrientsContainer .nutrientsWrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.nutrientsFluid .nutrientsContainer .nutrientsWrap .nutrientsInner {
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.nutrientsFluid .nutrientsContainer .nutrientsWrap .nutrientsInner img {
+  margin-right: 15px;
+  max-width: 50px;
+  height: auto;
+}
+.nutrientsFluid .nutrientsContainer .nutrientsWrap .nutrientsInner .nutrientsInnerPB {
+  text-transform: uppercase;
+  font-family: 'Rubik Medium';
+  font-weight: normal;
+  font-weight: 500;
+  color: #30323a;
+}
+.nutrientsFluid .nutrientsContainer .nutrientsWrap .nutrientsInner .nutrientsInnerPL {
+  text-transform: uppercase;
+  font-family: 'Rubik Light';
+  font-weight: 300;
+  font-weight: normal;
+  color: #30323a;
+}
+.nutrientsFluid .nutrientsContainer .nutrientsWrap .nutrientsInnerC {
+  align-items: center;
+}
+.nutrientsFluid .nutrientsContainer .nutrientsWrapBottom {
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.nutrientsFluid .nutrientsContainer .lightboxNutritionFacts .NutritionFacts {
+  border: none;
+  background: #6dd4ef;
+  font-size: 35px;
+  text-transform: uppercase;
+  padding: 20px 30px;
+  color: #ffffff;
+  font-family: 'Rubik Medium';
+  font-weight: normal;
+  font-weight: 500;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+/* nutrients Section End*/
+/*SqueezeBottleFluid start*/
+.SqueezeBottleFluid {
+  background: #e2e2e2 url(../img/bearqueezebottleBg.png) no-repeat center top;
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-position: 100% -1px;
+}
+.SqueezeBottleFluid .SqueezeBottleContainer .h3 {
+  font-size: 55px;
+  font-family: 'Rubik Medium';
+  font-weight: normal;
+  font-weight: 500;
+  margin-bottom: 80px;
+  margin-top: 225px;
+}
+.SqueezeBottleFluid .SqueezeBottleContainer img {
+  height: 600px;
+  margin: 0 auto;
+}
+.SqueezeBottleFluid .SqueezeBottleContainer .miniBlock {
+  font-size: 30px;
+  color: #545454;
+  margin-bottom: 150px;
+}
+.SqueezeBottleFluid .SqueezeBottleContainer .miniBlock li {
+  font-family: 'Rubik Regular';
+  font-weight: normal;
+  line-height: 1.6em;
+}
+.SqueezeBottleFluid .SqueezeBottleContainer .miniBlock .title {
+  font-family: 'Rubik Medium';
+  font-weight: normal;
+  font-weight: 500;
+}
+.SqueezeBottleFluid .SqueezeBottleContainer .miniBlockCarolie,
+.SqueezeBottleFluid .SqueezeBottleContainer .miniBlockEssential {
+  margin-bottom: 0;
+}
+/*SqueezeBottleFluid end*/
+/* productsGirlWrapFluid section start */
+.productsGirlWrapFluid {
+  background: #e2e2e2 url(../img/focus-image1Test.png) no-repeat center center;
+  -webkit-background-size: cover;
+  min-height: 850px;
+  background-size: cover;
+}
+.productsGirlWrapFluid img {
+  display: none;
+}
+/* productsGirlWrapFluid section end */
+/*  optimal Section start */
+.optimalFluid {
+  padding-top: 120px;
+}
+.optimalFluid .optimalContainer .optimalWrap {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.optimalFluid .optimalContainer .optimalWrap .optimalInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  min-width: 250px;
+  margin-bottom: 60px;
+}
+.optimalFluid .optimalContainer .optimalWrap .optimalInner img {
+  padding-bottom: 20px;
+}
+.optimalFluid .optimalContainer .optimalWrap .optimalInner p {
+  color: #5eaccf;
+  font-size: 22px;
+  font-family: 'Rubik Regular';
+  font-weight: normal;
+}
+/*  optimal Section end */
+/*  Footer Section Start */
+footer .footerFluid {
+  min-height: 570px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding-bottom: 60px;
+  padding-top: 40px;
+  background-image: -webkit-linear-gradient(96.8deg, #e8e7e7 50%, #ffffff 50%);
+}
+footer .footerFluid .footerContainer .form {
+  margin-right: auto;
+  margin-left: auto;
+}
+footer .form .submit {
+  width: 100%;
+}
+footer .footerFluidBottom {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+footer .footerFluidBottom .footerContainer .footerLinks {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+footer .footerFluidBottom .footerContainer .footerLinks li {
+  display: inline-block;
+  padding: 0 35px;
+  position: relative;
+  line-height: 32px;
+}
+footer .footerFluidBottom .footerContainer .footerLinks li a {
+  font-family: 'Rubik Medium';
+  font-weight: normal;
+  font-weight: 500;
+  font-size: 19px;
+  color: #000000;
+}
+footer .footerFluidBottom .footerContainer .footerLinks .sticks:after {
+  content: "|";
+  font-family: 'Rubik Medium';
+  font-weight: normal;
+  font-weight: 500;
+  font-size: 19px;
+  color: #000000;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+footer .footerFluidBottom .footerContainer .footerLinks .sticks:before {
+  content: "|";
+  font-family: 'Rubik Medium';
+  font-weight: normal;
+  font-weight: 500;
+  font-size: 19px;
+  color: #000000;
+  position: absolute;
+  left: 0;
+}
+footer .footerFluidBottom .footerContainer .social {
+  text-align: center;
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+footer .footerFluidBottom .footerContainer .social ul li {
+  display: inline-block;
+  margin-right: 30px;
+}
+footer .footerFluidBottom .footerContainer .social ul li:last-child {
+  margin-right: 0;
+}
+footer .footerFluidBottom .footerContainer .social img {
+  width: 44px;
+  height: 44px;
+}
+footer .footerFluidBottom .footerContainer .social .facebookIcon {
+  width: 50px;
+}
+footer .footerFluidBottom .footerContainer .copyRight {
+  font-family: 'Rubik Medium';
+  font-weight: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #a3a3a3;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 22px;
+}
+/*  Footer Section End */
+@media (min-width: 0px) and (max-width: 320px) {
+  .h1 {
+    font-size: 44px;
+  }
+  .h2 {
+    font-size: 42px;
+  }
+  .h4 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 18px;
+  }
+  .submit {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+  /*Header Section Start*/
+  header .KickstarterFluid {
+    order: 2;
+    padding-top: 70px;
+  }
+  header .KickstarterFluid .KickstarterContainer .Kickstarter {
+    padding: 8px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  header .headerFluid {
+    border-bottom: 3px solid #343741;
+    position: fixed;
+    width: 100%;
+    order: 1;
+    z-index: 999;
+  }
+  header .headerFluid .headerContainer .logo a img {
+    height: 45px;
+  }
+  header .headerFluid .headerContainer .headerWrap {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  header .headerFluid .headerContainer .openNav {
+    display: block;
+    margin-top: -14px;
+    font-size: 35px;
+    cursor: pointer;
+    color: #343741;
+  }
+  header .headerFluid .headerContainer .navMenu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding-top: 90px;
+    text-align: center;
+  }
+  header .headerFluid .headerContainer .navMenu .closeBtnMenu {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 5%;
+    font-size: 63px;
+    margin-left: 50px;
+    color: #343741;
+    cursor: pointer;
+  }
+  header .headerFluid .headerContainer .navMenu .ulNav {
+    display: block;
+  }
+  header .headerFluid .headerContainer .navMenu .ulNav li {
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 15px;
+  }
+  header .headerFluid .headerContainer .navMenu .ulNav li:last-child {
+    margin-right: 5%;
+  }
+  header .headerFluid .headerContainer .navMenu .ulNav li a {
+    display: block;
+    font-size: 17px;
+    color: #ffffff;
+    line-height: 30px;
+    background: #30323a;
+    text-transform: uppercase;
+    padding: 18px 0;
+    letter-spacing: 2px;
+  }
+  /*Header Section End*/
+  /* productsWrapFluid1  section start */
+  .productsWrapFluid {
+    background-image: none;
+    min-height: 0;
+  }
+  .productsWrapFluid .bearProductsImg {
+    display: block;
+  }
+  /* productsWrapFluid1  section end */
+  /* Bear Product Section Start */
+  .bearProductFluid {
+    min-height: 0px;
+    background: #ffffff;
+    padding-top: 0;
+    padding-bottom: 0px;
+  }
+  .bearProductFluid .bearProductContainer .h1 {
+    margin-top: 44px;
+    text-align: center;
+  }
+  .bearProductFluid .bearProductContainer .bottle {
+    display: none;
+  }
+  .bearProductFluid .bearProductContainer .bottle img {
+    height: 350px;
+    margin-top: 30px;
+  }
+  .bearProductFluid .bearProductContainer .productDesc {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    line-height: 43px;
+    text-align: center;
+    font-size: 34px;
+  }
+  .bearProductFluid .bearProductContainer .desc {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .bearProductFluid .bearProductContainer .co-founders {
+    margin-bottom: 20px;
+  }
+  .bearProductFluid .bearProductContainer .submit {
+    margin-top: 25px;
+  }
+  .bearProductFluid .bearProductContainer .arrowDown {
+    display: none;
+  }
+  /* Bear Product Section End */
+  /* Form Section Start*/
+  .form,
+  .participation_form {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 35px;
+    margin-bottom: 83px;
+  }
+  .form p,
+  .participation_form p {
+    text-align: center;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  .form .input,
+  .participation_form .input,
+  .form .textarea,
+  .participation_form .textarea {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  .form ::-webkit-input-placeholder,
+  .participation_form ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-family: 'Rubik Light';
+    font-weight: 300;
+    font-weight: normal;
+    font-size: 18px;
+    color: #ffffff;
+  }
+  .form ::-moz-placeholder,
+  .participation_form ::-moz-placeholder {
+    /* Firefox 19+ */
+    font-family: 'Rubik Light';
+    font-weight: 300;
+    font-weight: normal;
+    font-size: 18px;
+    color: #ffffff;
+  }
+  .form :-ms-input-placeholder,
+  .participation_form :-ms-input-placeholder {
+    /* IE 10+ */
+    font-family: 'Rubik Light';
+    font-weight: 300;
+    font-weight: normal;
+    font-size: 18px;
+  }
+  .form :-moz-placeholder,
+  .participation_form :-moz-placeholder {
+    /* Firefox 18- */
+    font-family: 'Rubik Light';
+    font-weight: 300;
+    font-weight: normal;
+    font-size: 24px;
+    color: #ffffff;
+  }
+  .form .submit,
+  .participation_form .submit {
+    width: 100%;
+    max-width: 480px;
+    padding: 15px 10px;
+    font-size: 20px;
+    left: 0px;
+    margin-bottom: -35px;
+  }
+  /* Form Section end*/
+  /* KetoMealShakeFluid Section start*/
+  .KetoMealShakeFluid {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .KetoMealShakeFluid .KetoMealShakeContainer .nutrientsDesc {
+    font-size: 18px;
+    line-height: 28px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+  .KetoMealShakeFluid .KetoMealShakeContainer .KetoMealShakeWrap .KetoMealShakeInner .KetoMealShakeInnerDesc {
+    padding-bottom: 40px;
+  }
+  .KetoMealShakeFluid .KetoMealShakeContainer .KetoMealShakeWrap .KetoMealShakeInner .KetoMealShakeInnerDesc img {
+    margin-right: 0;
+    margin-bottom: 0px;
+  }
+  .KetoMealShakeFluid .KetoMealShakeContainer .KetoMealShakeWrap .KetoMealShakeInner .KetoMealShakeInnerDesc p {
+    font-size: 18px;
+  }
+  .KetoMealShakeFluid .KetoMealShakeContainer .KetoMealShakeInnerDesc {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .KetoMealShakeFluid .KetoMealShakeContainer .KetoMealShakeInnerDesc img {
+    display: block;
+    width: 50%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .KetoMealShakeFluid .KetoMealShakeContainer .KetoMealShakeInnerDesc .innerText {
+    text-align: center;
+  }
+  /* KetoMealShakeFluid Section end*/
+  /* nutrients Section Start*/
+  .nutrientsFluid .nutrientsContainer {
+    padding-top: 0px;
+  }
+  .nutrientsFluid .nutrientsContainer .nutrientsWrap .nutrientsInner {
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .nutrientsFluid .nutrientsContainer .nutrientsWrap .nutrientsInner img {
+    margin-right: 0;
+  }
+  .nutrientsFluid .nutrientsContainer .nutrientsWrap .nutrientsInner .nutrientsInnerPB {
+    margin-top: 20px;
+    margin-bottom: 4px;
+  }
+  .nutrientsFluid .nutrientsContainer .nutrientsWrap .moreProteinInner {
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nutrientsFluid .nutrientsContainer .nutrientsWrapBottom {
+    margin-top: 0px;
+    justify-content: space-around;
+  }
+  .nutrientsFluid .nutrientsContainer .lightboxNutritionFacts .NutritionFacts {
+    font-size: 19px;
+    padding: 20px 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    max-width: 480px;
+    width: 100%;
+  }
+  /* nutrients Section End*/
+  /* optimalFluid Section start*/
+  .optimalFluid {
+    padding-top: 0px;
+  }
+  .optimalFluid .optimalContainer .optimalWrap .optimalInner {
+    padding-top: 30px;
+    margin-bottom: 5px;
+  }
+  .optimalFluid .optimalContainer .optimalWrap .optimalInner img {
+    width: 35%;
+    padding-bottom: 10px;
+  }
+  .optimalFluid .optimalContainer .optimalWrap .optimalInner p {
+    font-size: 18px;
+  }
+  /* optimalFluid Section End*/
+  /*  magicBottle Section Start */
+  .magicBottleFluid {
+    min-height: 0;
+    background: #707070;
+  }
+  .magicBottleFluid .magicBottleContainer img {
+    margin-top: 35px;
+  }
+  .magicBottleFluid .magicBottleContainer p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  /*  magicBottle Section End */
+  /*  beraProducts Section Start */
+  .beraProductsFluid {
+    padding-top: 30px;
+    padding-bottom: 0px;
+  }
+  .beraProductsFluid .beraProductsContainer {
+    padding-bottom: 30px;
+  }
+  .beraProductsFluid .beraProductsContainer img {
+    margin-top: 0px;
+    width: 250px;
+  }
+  .beraProductsFluid .beraProductsContainer p {
+    padding-bottom: 30px;
+    text-align: left;
+    margin-right: 0;
+    font-size: 26px;
+    text-align: center;
+    margin-top: 13px;
+  }
+  /*  beraProducts Section End */
+  /*nutrientsFluid start*/
+  .nutrientsFluid {
+    padding-top: 0;
+  }
+  .nutrientsFluid .nutrientsContainer .h4 {
+    margin-bottom: 45px;
+    line-height: 40px;
+  }
+  .nutrientsFluid .nutrientsContainer .nutrientsWrap .nutrientsInner {
+    margin-bottom: 35px;
+  }
+  .nutrientsFluid .nutrientsContainer .nutrientsWrap .nutrientsInner .nutrientsInnerPB {
+    margin-top: 10px;
+    margin-bottom: 7px;
+  }
+  /*nutrientsFluid end*/
+  /*SqueezeBottleFluid start*/
+  .SqueezeBottleFluid .SqueezeBottleContainer .h3 {
+    font-size: 42px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+  .SqueezeBottleFluid .SqueezeBottleContainer .miniBlock {
+    font-size: 18px;
+    margin-bottom: 23px;
+  }
+  .SqueezeBottleFluid .SqueezeBottleContainer img {
+    height: 350px;
+    margin-bottom: 35px;
+  }
+  /*SqueezeBottleFluid end*/
+  /*productsGirlWrapFluid start*/
+  .productsGirlWrapFluid {
+    background: none;
+    min-height: 0;
+    background: #e2e2e2;
+  }
+  /*productsGirlWrapFluid end*/
+  footer .footerFluid {
+    padding-top: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+    min-height: 0;
+  }
+  footer .footerFluid .footerContainer .form {
+    padding: 25px 25px 25px 25px;
+  }
+  footer .footerFluidBottom {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  footer .footerFluidBottom .footerContainer .footerLinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  footer .footerFluidBottom .footerContainer .footerLinks li {
+    padding: 0 11px;
+  }
+  footer .footerFluidBottom .footerContainer .footerLinks li a {
+    font-size: 18px;
+  }
+  footer .footerFluidBottom .footerContainer .footerLinks .sticks:after {
+    display: none;
+  }
+  footer .footerFluidBottom .footerContainer .footerLinks .sticks:before {
+    display: none;
+  }
+  footer .footerFluidBottom .footerContainer .social {
+    margin-top: 16px;
+    margin-bottom: 20px;
+  }
+  footer .footerFluidBottom .footerContainer .social img {
+    width: 35px;
+  }
+  footer .footerFluidBottom .footerContainer .copyRight {
+    font-size: 15px;
+  }
+}
+@media (min-width: 321px) and (max-width: 480px) {
+  .h1 {
+    font-size: 44px;
+  }
+  .h2 {
+    font-size: 42px;
+  }
+  .h4 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 18px;
+  }
+  .submit {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+  /*Header Section Start*/
+  header .KickstarterFluid {
+    order: 2;
+    padding-top: 70px;
+  }
+  header .KickstarterFluid .KickstarterContainer .Kickstarter {
+    padding: 8px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  header .headerFluid {
+    border-bottom: 3px solid #343741;
+    position: fixed;
+    width: 100%;
+    order: 1;
+    z-index: 999;
+  }
+  header .headerFluid .headerContainer .logo a img {
+    height: 45px;
+  }
+  header .headerFluid .headerContainer .headerWrap {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  header .headerFluid .headerContainer .openNav {
+    display: block;
+    margin-top: -14px;
+    font-size: 35px;
+    cursor: pointer;
+    color: #343741;
+  }
+  header .headerFluid .headerContainer .navMenu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding-top: 90px;
+    text-align: center;
+  }
+  header .headerFluid .headerContainer .navMenu .closeBtnMenu {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 5%;
+    font-size: 63px;
+    margin-left: 50px;
+    color: #343741;
+    cursor: pointer;
+  }
+  header .headerFluid .headerContainer .navMenu .ulNav {
+    display: block;
+  }
+  header .headerFluid .headerContainer .navMenu .ulNav li {
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 15px;
+  }
+  header .headerFluid .headerContainer .navMenu .ulNav li:last-child {
+    margin-right: 5%;
+  }
+  header .headerFluid .headerContainer .navMenu .ulNav li a {
+    display: block;
+    font-size: 17px;
+    color: #ffffff;
+    line-height: 30px;
+    background: #30323a;
+    text-transform: uppercase;
+    padding: 18px 0;
+    letter-spacing: 2px;
+  }
+  /*Header Section End*/
+  /* productsWrapFluid1  section start */
+  .productsWrapFluid {
+    background-image: none;
+    min-height: 0;
+  }
+  .productsWrapFluid .bearProductsImg {
+    display: block;
+  }
+  /* productsWrapFluid1  section end */
+  /* Bear Product Section Start */
+  .bearProductFluid {
+    min-height: 0px;
+    background: #ffffff;
+    padding-top: 0;
+    padding-bottom: 0px;
+  }
+  .bearProductFluid .bearProductContainer .h1 {
+    margin-top: 44px;
+    text-align: center;
+  }
+  .bearProductFluid .bearProductContainer .bottle {
+    display: none;
+  }
+  .bearProductFluid .bearProductContainer .bottle img {
+    height: 350px;
+    margin-top: 30px;
+  }
+  .bearProductFluid .bearProductContainer .submit {
+    margin-top: 25px;
+  }
+  .bearProductFluid .bearProductContainer .productDesc {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    line-height: 43px;
+    text-align: center;
+    font-size: 34px;
+  }
+  .bearProductFluid .bearProductContainer .desc {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .bearProductFluid .bearProductContainer .co-founders {
+    margin-bottom: 20px;
+  }
+  .bearProductFluid .bearProductContainer .arrowDown {
+    display: none;
+  }
+  /* Bear Product Section End */
+  /* Form Section Start*/
+  .form,
+  .participation_form {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 35px;
+    margin-bottom: 83px;
+  }
+  .form p,
+  .participation_form p {
+    text-align: center;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  .form .input,
+  .participation_form .input,
+  .form .textarea,
+  .participation_form .textarea {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  .form ::-webkit-input-placeholder,
+  .participation_form ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-family: 'Rubik Light';
+    font-weight: 300;
+    font-weight: normal;
+    font-size: 18px;
+    color: #ffffff;
+  }
+  .form ::-moz-placeholder,
+  .participation_form ::-moz-placeholder {
+    /* Firefox 19+ */
+    font-family: 'Rubik Light';
+    font-weight: 300;
+    font-weight: normal;
+    font-size: 18px;
+    color: #ffffff;
+  }
+  .form :-ms-input-placeholder,
+  .participation_form :-ms-input-placeholder {
+    /* IE 10+ */
+    font-family: 'Rubik Light';
+    font-weight: 300;
+    font-weight: normal;
+    font-size: 18px;
+  }
+  .form :-moz-placeholder,
+  .participation_form :-moz-placeholder {
+    /* Firefox 18- */
+    font-family: 'Rubik Light';
+    font-weight: 300;
+    font-weight: normal;
+    font-size: 24px;
+    color: #ffffff;
+  }
+  .form .submit,
+  .participation_form .submit {
+    width: 100%;
+    max-width: 480px;
+    padding: 15px 10px;
+    font-size: 20px;
+    left: 0px;
+    margin-bottom: -35px;
+  }
+  /* Form Section end*/
+  /* KetoMealShakeFluid Section start*/
+  .KetoMealShakeFluid {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .KetoMealShakeFluid .KetoMealShakeContainer .nutrientsDesc {
+    font-size: 18px;
+    line-height: 28px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+  .KetoMealShakeFluid .KetoMealShakeContainer .KetoMealShakeWrap .KetoMealShakeInner .KetoMealShakeInnerDesc {
+    padding-bottom: 40px;
+  }
+  .KetoMealShakeFluid .KetoMealShakeContainer .KetoMealShakeWrap .KetoMealShakeInner .KetoMealShakeInnerDesc img {
+    margin-right: 0;
+    margin-bottom: 0px;
+  }
+  .KetoMealShakeFluid .KetoMealShakeContainer .KetoMealShakeWrap .KetoMealShakeInner .KetoMealShakeInnerDesc p {
+    font-size: 18px;
+  }
+  .KetoMealShakeFluid .KetoMealShakeContainer .KetoMealShakeInnerDesc {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .KetoMealShakeFluid .KetoMealShakeContainer .KetoMealShakeInnerDesc img {
+    display: block;
+    width: 50%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .KetoMealShakeFluid .KetoMealShakeContainer .KetoMealShakeInnerDesc .innerText {
+    text-align: center;
+  }
+  /* KetoMealShakeFluid Section end*/
+  /* nutrients Section Start*/
+  .nutrientsFluid .nutrientsContainer {
+    padding-top: 0px;
+  }
+  .nutrientsFluid .nutrientsContainer .nutrientsWrap .nutrientsInner {
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .nutrientsFluid .nutrientsContainer .nutrientsWrap .nutrientsInner img {
+    margin-right: 0;
+  }
+  .nutrientsFluid .nutrientsContainer .nutrientsWrap .nutrientsInner .nutrientsInnerPB {
+    margin-top: 20px;
+    margin-bottom: 4px;
+  }
+  .nutrientsFluid .nutrientsContainer .nutrientsWrap .moreProteinInner {
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nutrientsFluid .nutrientsContainer .nutrientsWrapBottom {
+    margin-top: 0px;
+    justify-content: space-around;
+  }
+  .nutrientsFluid .nutrientsContainer .lightboxNutritionFacts .NutritionFacts {
+    font-size: 19px;
+    padding: 20px 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    max-width: 480px;
+    width: 100%;
+  }
+  /* nutrients Section End*/
+  /* optimalFluid Section start*/
+  .optimalFluid {
+    padding-top: 0px;
+  }
+  .optimalFluid .optimalContainer .optimalWrap .optimalInner {
+    padding-top: 30px;
+    margin-bottom: 5px;
+  }
+  .optimalFluid .optimalContainer .optimalWrap .optimalInner img {
+    width: 35%;
+    padding-bottom: 10px;
+  }
+  .optimalFluid .optimalContainer .optimalWrap .optimalInner p {
+    font-size: 18px;
+  }
+  /* optimalFluid Section End*/
+  /*  magicBottle Section Start */
+  .magicBottleFluid {
+    min-height: 0;
+    background: #707070;
+  }
+  .magicBottleFluid .magicBottleContainer img {
+    margin-top: 35px;
+  }
+  .magicBottleFluid .magicBottleContainer p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  /*  magicBottle Section End */
+  /*  beraProducts Section Start */
+  .beraProductsFluid {
+    padding-top: 30px;
+    padding-bottom: 0px;
+  }
+  .beraProductsFluid .beraProductsContainer {
+    padding-bottom: 30px;
+  }
+  .beraProductsFluid .beraProductsContainer img {
+    margin-top: 0px;
+    width: 250px;
+  }
+  .beraProductsFluid .beraProductsContainer p {
+    padding-bottom: 30px;
+    text-align: left;
+    margin-right: 0;
+    font-size: 26px;
+    text-align: center;
+    margin-top: 13px;
+  }
+  /*  beraProducts Section End */
+  /*nutrientsFluid start*/
+  .nutrientsFluid {
+    padding-top: 0;
+  }
+  .nutrientsFluid .nutrientsContainer .h4 {
+    margin-bottom: 45px;
+    line-height: 40px;
+  }
+  .nutrientsFluid .nutrientsContainer .nutrientsWrap .nutrientsInner {
+    margin-bottom: 35px;
+  }
+  .nutrientsFluid .nutrientsContainer .nutrientsWrap .nutrientsInner .nutrientsInnerPB {
+    margin-top: 10px;
+    margin-bottom: 7px;
+  }
+  /*nutrientsFluid end*/
+  /*SqueezeBottleFluid start*/
+  .SqueezeBottleFluid .SqueezeBottleContainer .h3 {
+    font-size: 42px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+  .SqueezeBottleFluid .SqueezeBottleContainer .miniBlock {
+    font-size: 18px;
+    margin-bottom: 23px;
+  }
+  .SqueezeBottleFluid .SqueezeBottleContainer img {
+    height: 350px;
+    margin-bottom: 35px;
+  }
+  /*SqueezeBottleFluid end*/
+  /*productsGirlWrapFluid start*/
+  .productsGirlWrapFluid {
+    background: none;
+    min-height: 0;
+    background: #e2e2e2;
+  }
+  /*productsGirlWrapFluid end*/
+  footer .footerFluid {
+    padding-top: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+    min-height: 0px;
+  }
+  footer .footerFluid .footerContainer .form {
+    padding: 25px 25px 25px 25px;
+  }
+  footer .footerFluidBottom {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  footer .footerFluidBottom .footerContainer .footerLinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  footer .footerFluidBottom .footerContainer .footerLinks li {
+    padding: 0 11px;
+  }
+  footer .footerFluidBottom .footerContainer .footerLinks li a {
+    font-size: 18px;
+  }
+  footer .footerFluidBottom .footerContainer .footerLinks .sticks:after {
+    display: none;
+  }
+  footer .footerFluidBottom .footerContainer .footerLinks .sticks:before {
+    display: none;
+  }
+  footer .footerFluidBottom .footerContainer .social {
+    margin-top: 16px;
+    margin-bottom: 20px;
+  }
+  footer .footerFluidBottom .footerContainer .social img {
+    width: 35px;
+  }
+  footer .footerFluidBottom .footerContainer .copyRight {
+    font-size: 15px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .h2 {
+    font-size: 70px;
+  }
+  /*Header Section Start*/
+  header .KickstarterFluid {
+    order: 2;
+    padding-top: 70px;
+  }
+  header .headerFluid {
+    border-bottom: 3px solid #343741;
+    position: fixed;
+    width: 100%;
+    order: 1;
+    z-index: 999;
+  }
+  header .headerFluid .headerContainer .logo a img {
+    height: 45px;
+  }
+  header .headerFluid .headerContainer .headerWrap {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  header .headerFluid .headerContainer .openNav {
+    display: block;
+    margin-top: -14px;
+    font-size: 35px;
+    cursor: pointer;
+    color: #343741;
+  }
+  header .headerFluid .headerContainer .navMenu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding-top: 90px;
+    text-align: center;
+  }
+  header .headerFluid .headerContainer .navMenu .closeBtnMenu {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    font-size: 70px;
+    margin-left: 50px;
+    color: #343741;
+    cursor: pointer;
+  }
+  header .headerFluid .headerContainer .navMenu .ulNav {
+    display: block;
+  }
+  header .headerFluid .headerContainer .navMenu .ulNav li {
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 15px;
+  }
+  header .headerFluid .headerContainer .navMenu .ulNav li:last-child {
+    margin-right: 5%;
+  }
+  header .headerFluid .headerContainer .navMenu .ulNav li a {
+    display: block;
+    font-size: 25px;
+    color: #ffffff;
+    line-height: 30px;
+    background: #30323a;
+    text-transform: uppercase;
+    padding: 20px 5px;
+    letter-spacing: 2px;
+  }
+  /*Header Section End*/
+  /* Form Section Start*/
+  .form,
+  .participation_form {
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 45px;
+    margin-bottom: 150px;
+  }
+  .form p,
+  .participation_form p {
+    text-align: center;
+  }
+  .form .submit,
+  .participation_form .submit {
+    left: 0;
+    max-width: 768px;
+    width: 100%;
+    padding: 15px 15px;
+    margin-bottom: -70px;
+  }
+  /* Form Section end*/
+  /* Header Bear Product Section Start */
+  .bearProductFluid {
+    min-height: 0px;
+    background: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .bearProductFluid .bearProductContainer .h1 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 80px;
+    text-align: center;
+  }
+  .bearProductFluid .bearProductContainer .bottle {
+    display: none;
+  }
+  .bearProductFluid .bearProductContainer .bottle img {
+    height: 500px;
+    margin-top: 20px;
+  }
+  .bearProductFluid .bearProductContainer .productDesc {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 43px;
+    text-align: center;
+  }
+  .bearProductFluid .bearProductContainer .desc {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .bearProductFluid .bearProductContainer .arrowDown {
+    display: none;
+  }
+  /* Header Bear Product Section End */
+  /* productsWrapFluid1  section start */
+  .productsWrapFluid {
+    background-image: none;
+    min-height: 0;
+  }
+  .productsWrapFluid .bearProductsImg {
+    display: block;
+  }
+  /* productsWrapFluid1  section end */
+  /* nutrients Section Start*/
+  .nutrientsFluid .nutrientsContainer {
+    padding-top: 0;
+    padding-bottom: 10px;
+  }
+  .nutrientsFluid .nutrientsContainer .nutrientsWrap .nutrientsInner {
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .nutrientsFluid .nutrientsContainer .nutrientsWrap .nutrientsInner img {
+    margin-right: 0;
+  }
+  .nutrientsFluid .nutrientsContainer .nutrientsWrap .nutrientsInner .nutrientsInnerPB {
+    margin-top: 20px;
+    margin-bottom: 4px;
+  }
+  .nutrientsFluid .nutrientsContainer .nutrientsWrap .moreProteinInner {
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nutrientsFluid .nutrientsContainer .nutrientsWrapBottom {
+    margin-top: 10px;
+    justify-content: space-around;
+  }
+  .nutrientsFluid .nutrientsContainer .lightboxNutritionFacts .NutritionFacts {
+    margin-top: 20px;
+  }
+  /* nutrients Section End*/
+  /* optimalFluid Section Start*/
+  .optimalFluid {
+    padding-top: 50px;
+  }
+  /* optimalFluid Section End*/
+  /* KetoMealShakeFluid Section start*/
+  .KetoMealShakeFluid {
+    padding-bottom: 60px;
+  }
+  .KetoMealShakeFluid .KetoMealShakeContainer .nutrientsDesc {
+    font-size: 22px;
+    line-height: 28px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .KetoMealShakeFluid .KetoMealShakeContainer .KetoMealShakeInnerDesc {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .KetoMealShakeFluid .KetoMealShakeContainer .KetoMealShakeInnerDesc img {
+    display: block;
+    width: 50%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .KetoMealShakeFluid .KetoMealShakeContainer .KetoMealShakeInnerDesc .innerText {
+    text-align: center;
+  }
+  .KetoMealShakeFluid .KetoMealShakeContainer .KetoMealShakeInnerDesc .innerText p {
+    font-size: 18px;
+  }
+  /* KetoMealShakeFluid Section end*/
+  /*  magicBottle Section Start */
+  .magicBottleFluid {
+    min-height: 735px;
+  }
+  .magicBottleFluid .magicBottleContainer img {
+    margin-top: -50px;
+  }
+  .magicBottleFluid .magicBottleContainer p {
+    line-height: 47px;
+    font-size: 24px;
+    color: #fff;
+    padding-bottom: 20px;
+  }
+  /*  magicBottle Section End */
+  /*  beraProducts Section Start */
+  .beraProductsFluid .beraProductsContainer img {
+    margin-top: 0px;
+  }
+  .beraProductsFluid .beraProductsContainer p {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+  /*nutrientsFluid start*/
+  .nutrientsFluid {
+    padding-top: 0;
+  }
+  /*nutrientsFluid end*/
+  /*SqueezeBottleFluid start*/
+  .SqueezeBottleFluid .SqueezeBottleContainer .h3 {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    font-size: 46px;
+  }
+  .SqueezeBottleFluid .SqueezeBottleContainer .miniBlock {
+    margin-bottom: 30px;
+  }
+  .SqueezeBottleFluid .SqueezeBottleContainer img {
+    height: 500px;
+    margin-bottom: 40px;
+  }
+  /*SqueezeBottleFluid end*/
+  /*.optimalFluid start*/
+  .optimalFluid {
+    padding-top: 60px;
+    padding-bottom: 0px;
+  }
+  /*.optimalFluid end*/
+  /*productsGirlWrapFluid start*/
+  .productsGirlWrapFluid {
+    background: none;
+    min-height: 0;
+    background: #e2e2e2;
+  }
+  /*productsGirlWrapFluid end*/
+  /*  beraProducts Section End */
+  footer .footerFluid {
+    margin-bottom: 0px;
+    padding-top: 0;
+  }
+  footer .footerFluidBottom .footerContainer .footerLinks li {
+    padding: 0 20px;
+  }
+  footer .footerFluidBottom {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  header .headerFluid .headerContainer .navMenu .ulNav li {
+    margin-right: 39px;
+  }
+  /* Form Section Start*/
+  .form {
+    max-width: 100%;
+  }
+  .form .submit {
+    left: 30%;
+  }
+  .participation_form {
+    margin: 0 auto;
+  }
+  /* Form Section end*/
+  /* Header Bear Product Section Start */
+  .bearProductFluid {
+    background: #ffffff;
+    min-height: 0;
+    padding-bottom: 40px;
+  }
+  .bearProductFluid .bearProductContainer {
+    margin-bottom: 90px;
+  }
+  .bearProductFluid .bearProductContainer .h1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 80px;
+    text-align: center;
+  }
+  .bearProductFluid .bearProductContainer .bottle {
+    display: none;
+  }
+  .bearProductFluid .bearProductContainer .bottle img {
+    margin-top: 70px;
+    height: 500px;
+  }
+  .bearProductFluid .bearProductContainer .productDesc {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 43px;
+    text-align: center;
+  }
+  .bearProductFluid .bearProductContainer p {
+    text-align: center;
+  }
+  .bearProductFluid .arrowDown {
+    display: none;
+  }
+  /* Header Bear Product Section End */
+  /* nutrients Section Start*/
+  .nutrientsFluid {
+    padding-top: 30px;
+  }
+  .nutrientsFluid .nutrientsContainer .nutrientsWrap .nutrientsInner {
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+  }
+  .nutrientsFluid .nutrientsContainer .nutrientsWrap .nutrientsInner img {
+    margin-right: 0;
+  }
+  .nutrientsFluid .nutrientsContainer .nutrientsWrap .nutrientsInner .nutrientsInnerPB {
+    margin-top: 20px;
+    margin-bottom: 4px;
+  }
+  .nutrientsFluid .nutrientsContainer .nutrientsWrap .moreProteinInner {
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nutrientsFluid .nutrientsContainer .nutrientsWrapBottom {
+    margin-top: 40px;
+    justify-content: space-around;
+  }
+  /* nutrients Section End*/
+  /*  beraProducts Section Start */
+  .beraProductsFluid .beraProductsContainer img {
+    margin-top: 0px;
+  }
+  .beraProductsFluid .beraProductsContainer p {
+    text-align: left;
+  }
+  /*  beraProducts Section End */
+  /* SqueezeBottleFluid start*/
+  .SqueezeBottleFluid .SqueezeBottleContainer .h3 {
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
+  .SqueezeBottleFluid .SqueezeBottleContainer .miniBlock {
+    margin-bottom: 40px;
+  }
+  .SqueezeBottleFluid .SqueezeBottleContainer img {
+    height: 500px;
+    margin-bottom: 40px;
+  }
+  /* SqueezeBottleFluid end*/
+  /*.optimalFluid start*/
+  .optimalFluid {
+    padding-top: 60px;
+    padding-bottom: 0px;
+  }
+  .optimalFluid .optimalContainer .optimalWrap {
+    margin-bottom: 0;
+  }
+  /*.optimalFluid end*/
+  /*productsGirlWrapFluid start*/
+  .productsGirlWrapFluid img {
+    display: none;
+  }
+  /*productsGirlWrapFluid end*/
+  footer .footerFluid {
+    margin-bottom: 0;
+    padding-top: 20px;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .h1 {
+    font-size: 84px;
+  }
+  .h4 {
+    font-size: 30px;
+  }
+  /* Header Bear Product Section Start */
+  .bearProductFluid .bearProductContainer .bottle img {
+    margin-top: 100px;
+    position: static;
+  }
+  .bearProductFluid .bearProductContainer .bottle .cho-top {
+    margin-top: -240px;
+    margin-left: 200px;
+    height: 300px;
+  }
+  .bearProductFluid .bearProductContainer .bottle .ori-mid {
+    margin-top: -130px;
+    margin-left: 80px;
+    height: 300px;
+  }
+  .bearProductFluid .bearProductContainer .bottle .cho-bottom {
+    margin-top: -120px;
+    margin-left: 200px;
+    height: 300px;
+  }
+  .bearProductFluid .bearProductContainer .bottle .pumpkin {
+    margin-top: 240px;
+    margin-left: 60px;
+    height: 120px;
+  }
+  .bearProductFluid .bearProductContainer .bottle .coconut {
+    margin-top: -165px;
+    margin-left: 330px;
+    height: 110px;
+  }
+  .bearProductFluid .bearProductContainer .bottle .kale {
+    top: 80px;
+    right: 50px;
+    height: 190px;
+    z-index: 1;
+    margin-top: -566px;
+    margin-left: 323px;
+  }
+  .productDesc {
+    margin-top: 100px;
+  }
+  /* Header Bear Product Section End */
+  .KetoMealShakeFluid .KetoMealShakeContainer .KetoMealShakeInnerDesc img {
+    height: 100%;
+  }
+  .KetoMealShakeFluid .KetoMealShakeContainer .KetoMealShakeInnerDesc p {
+    font-size: 18px;
+  }
+  /* nutrients Section Start*/
+  .nutrientsFluid .nutrientsContainer .nutrientsWrapBottom {
+    justify-content: space-around;
+  }
+  .nutrientsFluid .nutrientsContainer .h4 {
+    font-size: 46px;
+  }
+  /* nutrients Section End*/
+  /*productsGirlWrapFluid start*/
+  .productsGirlWrapFluid img {
+    display: none;
+  }
+  /*productsGirlWrapFluid end*/
+}

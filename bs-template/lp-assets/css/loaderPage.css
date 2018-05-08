@@ -1,0 +1,58 @@
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.loaderGir {
+  width: 600px;
+  height: 429px;
+  background: url('../img/bear-loader.gif') 50% 50% no-repeat #ffffff;
+}
+.loaderTExt {
+  font-family: 'Rubik Regular';
+  color: #343741;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 40px;
+}
+@media (min-width: 0px) and (max-width: 320px) {
+  .loader {
+    display: none;
+  }
+}
+@media (min-width: 321px) and (max-width: 480px) {
+  .loader {
+    display: none;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .loader {
+    display: none;
+  }
+}

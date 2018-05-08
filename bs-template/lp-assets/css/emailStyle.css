@@ -1,0 +1,1383 @@
+/*============    RESET    ===========*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+ol,
+ul {
+  list-style: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+a:hover,
+a:link,
+a:focus,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+/* hide horizontal scroll */
+body {
+  overflow-x: hidden;
+}
+/*============    FONTS    ===========*/
+@font-face {
+  font-family: 'Rubik Medium';
+  src: url('../fonts/Rubik-Medium.eot');
+  src: url('../fonts/Rubik-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/Rubik-Medium.woff') format('woff'), url('../fonts/Rubik-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Rubik Regular';
+  src: url('../fonts/Rubik-Regular.eot');
+  src: url('../fonts/Rubik-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Rubik-Regular.woff') format('woff'), url('../fonts/Rubik-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Rubik Light';
+  src: url('../fonts/Rubik-Light.eot');
+  src: url('../fonts/Rubik-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/Rubik-Light.woff') format('woff'), url('../fonts/Rubik-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Rubik Bold';
+  src: url('../fonts/Rubik-Bold.eot');
+  src: url('../fonts/Rubik-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Rubik-Bold.woff') format('woff'), url('../fonts/Rubik-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Industry Inc Base';
+  src: url('../fonts/IndustryInc-Base.woff2') format('woff2'), url('../fonts/IndustryInc-Base.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/*Variables for fonts start*/
+.rubikL {
+  font-family: 'Rubik Light';
+  font-weight: 300;
+  font-weight: normal;
+}
+.rubikM {
+  font-family: 'Rubik Medium';
+  font-weight: normal;
+  font-weight: 500;
+}
+.rubikR {
+  font-family: 'Rubik Regular';
+  font-weight: normal;
+}
+.rubikB {
+  font-family: 'Rubik Bold';
+  font-weight: bold;
+  font-style: normal;
+}
+.industryBase {
+  font-family: 'Industry Inc Base';
+  font-weight: normal;
+  font-style: normal;
+}
+/*Variables for fonts end*/
+/*Variables for colors start*/
+.bgWhite {
+  background: #ffffff;
+}
+.white {
+  color: #ffffff;
+}
+.lightBlue {
+  color: #343741;
+}
+.darkBlue {
+  color: #30323a;
+}
+.blue {
+  color: #5eaccf;
+}
+.black {
+  color: #000000;
+}
+.grey {
+  color: #545454;
+}
+.bgLighterBLue {
+  background: #60d0f0;
+}
+/*Variables for colors end*/
+p {
+  font-family: 'Rubik Light';
+  font-weight: 300;
+  font-weight: normal;
+}
+span {
+  font-family: 'Rubik Medium';
+  font-weight: normal;
+  font-weight: 500;
+}
+/* copied btn start*/
+.copiedWrapper {
+  text-align: right;
+}
+.copied {
+  color: #545454;
+  display: none;
+}
+/* copied btn end*/
+.h1 {
+  font-family: 'Industry Inc Base';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 110px;
+  line-height: 1.2em;
+}
+.h2 {
+  font-family: 'Rubik Light';
+  font-weight: 300;
+  font-weight: normal;
+  font-size: 70px;
+  color: #444444;
+}
+.h3 {
+  font-family: 'Rubik Medium';
+  font-weight: normal;
+  font-weight: 500;
+  font-size: 50px;
+  color: #55c5e7;
+}
+/* Header Section Start*/
+header .headerFluid {
+  border-bottom: 3px solid #3437410f;
+  min-height: 65px;
+  background: #ffffff;
+}
+header .headerFluid .headerContainer .headerWrap {
+  margin-top: 2px;
+}
+header .headerFluid .headerContainer .logo a {
+  cursor: pointer;
+}
+header .headerFluid .headerContainer .logo a img {
+  height: 85px;
+  width: 85px;
+}
+/* Header Section End*/
+/* Referal Section Start */
+.emailFluid {
+  padding-top: 80px;
+  min-height: 900px;
+  background: #ffffff;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+.emailFluid .arrowDown {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+.emailFluid .emailContainer .bearBottleReferal {
+  position: relative;
+}
+.emailFluid .emailContainer .bearBottleReferal img {
+  position: absolute;
+}
+.emailFluid .emailContainer .bearBottleReferal .cho-top {
+  top: 80px;
+  left: 240px;
+  height: 400px;
+  z-index: 2;
+}
+.emailFluid .emailContainer .bearBottleReferal .ori-mid {
+  top: 290px;
+  left: 90px;
+  height: 400px;
+}
+.emailFluid .emailContainer .bearBottleReferal .cho-bottom {
+  top: 520px;
+  left: 240px;
+  height: 400px;
+  z-index: 2;
+}
+.emailFluid .emailContainer .bearBottleReferal .pumpkin {
+  top: 150px;
+  left: 110px;
+  height: 150px;
+}
+.emailFluid .emailContainer .bearBottleReferal .coconut {
+  top: 465px;
+  left: 430px;
+  height: 140px;
+  z-index: 2;
+}
+.emailFluid .emailContainer .bearBottleReferal .kale {
+  top: 80px;
+  right: 50px;
+  height: 250px;
+  z-index: 1;
+}
+.emailFluid .emailContainer .h1 {
+  margin-top: 191px;
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 76px;
+}
+.emailFluid .emailContainer .share-the-bear {
+  position: absolute;
+  margin-top: -42px;
+  left: 19%;
+  max-width: 365px;
+  background: #ff9600;
+  border: none;
+  color: #ffffff;
+  font-family: 'Rubik Medium';
+  font-weight: normal;
+  font-weight: 500;
+  font-size: 35px;
+  padding: 20px 32px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.emailFluid .emailContainer .productDesc {
+  background: rgba(86, 86, 86, 0.9);
+  max-width: 520px;
+  padding: 33px 33px 57px 33px;
+  position: relative;
+}
+.emailFluid .emailContainer .productDesc p {
+  line-height: 42px;
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+/* Referal Section End */
+/* productsWrapFluid section start */
+.productsWrapFluid {
+  /* The image used */
+  background-image: url("../img/bearProducts.png");
+  /* Set a specific height */
+  min-height: 794px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center top 70px;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.productsWrapFluid .bearProductsImg {
+  display: none;
+}
+/* productsWrapFluid section end */
+/*shareFluid start*/
+.shareFluid {
+  padding-top: 60px;
+  padding-bottom: 120px;
+  background: #ffffff;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.shareFluid .shareContainer {
+  /*for images start*/
+  /*for images end*/
+  /* invite50FriendsWrap start*/
+  /* invite50FriendsWrap end*/
+  /*social mini section start*/
+  /*social mini section end*/
+}
+.shareFluid .shareContainer .h2 {
+  margin-bottom: 70px;
+}
+.shareFluid .shareContainer .inviteLeft:before {
+  background: url(../img/timeline.png) no-repeat center top;
+  max-width: 32px;
+  width: 100%;
+  height: 1497px;
+  content: "";
+  position: absolute;
+  right: -17px;
+  z-index: 1;
+  top: 9px;
+}
+.shareFluid .shareContainer .inviteWrap {
+  width: 90%;
+}
+.shareFluid .shareContainer .inviteLeft .inviteWrap {
+  margin-right: auto;
+}
+.shareFluid .shareContainer .inviteRight .inviteWrap {
+  margin-left: auto;
+}
+.shareFluid .shareContainer .inviteBlock {
+  position: relative;
+  margin-bottom: 80px;
+  margin-top: 80px;
+  background: #ffffff;
+}
+.shareFluid .shareContainer .invite1Title {
+  margin-top: 0;
+}
+.shareFluid .shareContainer .inviteBlock7 {
+  margin-bottom: 187px;
+}
+.shareFluid .shareContainer .inviteBlock1 {
+  margin-bottom: 95px;
+}
+.shareFluid .shareContainer .inviteBlockTop {
+  background: #444444;
+  padding: 20px;
+  height: 225px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -moz-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+.shareFluid .shareContainer .title {
+  font-family: 'Rubik Medium';
+  font-weight: normal;
+  font-weight: 500;
+  font-size: 33px;
+  color: #ffffff;
+}
+.shareFluid .shareContainer .originalBear {
+  position: absolute;
+  right: 9px;
+  top: -83px;
+  width: 320px;
+}
+.shareFluid .shareContainer .chocolateSmall {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 330px;
+}
+.shareFluid .shareContainer .bottleSmall {
+  position: absolute;
+  right: 0px;
+  top: -75px;
+}
+.shareFluid .shareContainer .inviteBlockBottom {
+  padding: 15px;
+  background: #ffffff;
+  position: relative;
+}
+.shareFluid .shareContainer .desc {
+  font-family: 'Rubik Medium';
+  font-weight: normal;
+  font-weight: 500;
+  color: #000000;
+  font-size: 20px;
+  line-height: 2em;
+}
+.shareFluid .shareContainer .inviteBtn {
+  font-family: 'Rubik Regular';
+  font-weight: normal;
+  font-size: 17px;
+  background: #55c5e7;
+  border: none;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  padding: 10px 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 15px;
+  -moz-transition: all 0.2s 0.02s ease;
+  -o-transition: all 0.2s 0.02s ease;
+  -webkit-transition: all 0.2s 0.02s ease;
+}
+.shareFluid .shareContainer .inviteBtn:hover {
+  -moz-transition: all 0.2s 0.02s ease;
+  -o-transition: all 0.2s 0.02s ease;
+  -webkit-transition: all 0.2s 0.02s ease;
+}
+.shareFluid .shareContainer .inviteWrap7Friends {
+  margin-top: 133px;
+}
+.shareFluid .shareContainer .invite50FriendsWrap .inviteWrap {
+  width: 100%;
+}
+.shareFluid .shareContainer .invite50FriendsWrap .inviteBlockTop {
+  background: url(../img/DJ.gif) no-repeat center center;
+  -webkit-background-size: cover;
+  background-position: 100% 100%;
+  background-size: cover;
+  min-height: 641px;
+  background-position: center center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -moz-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+.shareFluid .shareContainer .invite50FriendsWrap .inviteBlock {
+  margin-top: -18px;
+  background: transparent;
+}
+.shareFluid .shareContainer .invite50FriendsWrap .invite50Title {
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+.shareFluid .shareContainer .djImage {
+  display: none;
+}
+.shareFluid .shareContainer .social {
+  width: 55%;
+  margin: 0 auto;
+  padding: 0;
+}
+/*shareFluid end*/
+/*  magicBottle Section Start */
+.magicBottleFluid {
+  background: #787878;
+}
+.magicBottleFluid .magicBottleContainer img {
+  margin-top: -93px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 5px solid #6dd4ef;
+}
+.magicBottleFluid .magicBottleContainer p {
+  line-height: 47px;
+  font-size: 24px;
+  color: #fff;
+  padding-bottom: 20px;
+}
+/*  magicBottle Section End */
+.footerFluid {
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+.footerFluid .footerContainer p {
+  margin-bottom: 20px;
+  font-family: 'Rubik Medium';
+  font-weight: normal;
+  font-weight: 500;
+  font-size: 19px;
+  color: #000000;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.footerFluid .footerContainer p a {
+  font-size: 18px;
+  color: #5eaccf;
+}
+.footerFluid .footerContainer .social {
+  text-align: center;
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+.footerFluid .footerContainer .social ul li {
+  display: inline-block;
+  margin-right: 30px;
+}
+.footerFluid .footerContainer .social ul li:last-child {
+  margin-right: 0;
+}
+.footerFluid .footerContainer .social img {
+  width: 44px;
+  height: 44px;
+}
+.footerFluid .footerContainer .copyRight {
+  font-family: 'Rubik Medium';
+  font-weight: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #a3a3a3;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 22px;
+}
+@media (min-width: 0px) and (max-width: 320px) {
+  /*header start */
+  header .headerFluid .headerContainer .headerWrap {
+    margin-top: 9px;
+  }
+  header .headerFluid .headerContainer .logo a img {
+    height: 55px;
+  }
+  /*header end */
+  /*social mini section start*/
+  .social {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .social a {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .social a img {
+    margin-right: 0;
+    width: 34px;
+  }
+  .social a span {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  .emailFluid {
+    padding-bottom: 40px;
+    background: none;
+    min-height: 0;
+  }
+  .emailFluid .emailContainer {
+    margin-top: 20px;
+  }
+  .emailFluid .emailContainer .bearBottleReferal {
+    display: none;
+  }
+  .emailFluid .emailContainer .h1 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 44px;
+  }
+  .emailFluid .emailContainer p {
+    font-size: 16px;
+  }
+  .emailFluid .emailContainer .productDesc {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 20px;
+    margin-bottom: 83px;
+    padding: 25px 15px 18px 15px;
+  }
+  .emailFluid .emailContainer .productDesc p {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .emailFluid .emailContainer .share-the-bear {
+    font-size: 20px;
+    left: 15px;
+    right: 15px;
+    position: static;
+  }
+  .emailFluid .arrowDown {
+    display: none;
+  }
+  /* productsWrapFluid1  section start */
+  .productsWrapFluid {
+    background-image: none;
+    min-height: 0;
+  }
+  .productsWrapFluid .bearProductsImg {
+    display: block;
+  }
+  /* productsWrapFluid1  section end */
+  /*shareFluid start*/
+  .shareFluid {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #ffffff;
+  }
+  .shareFluid .shareContainer .h2 {
+    margin-top: 0;
+    font-size: 41px;
+    margin-bottom: 15px;
+  }
+  .shareFluid .shareContainer .h3 {
+    text-align: center;
+    font-size: 34px;
+  }
+  .shareFluid .shareContainer .inviteWrap7Friends {
+    margin-top: 20px;
+  }
+  .shareFluid .shareContainer .inviteWrap {
+    width: 100%;
+  }
+  .shareFluid .shareContainer .inviteBlockTop {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .shareFluid .shareContainer .inviteBlock {
+    margin-top: 20px;
+    margin-bottom: 45px;
+  }
+  .shareFluid .shareContainer .inviteLeft:before {
+    display: none;
+  }
+  .shareFluid .shareContainer .title {
+    margin-top: 14px;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    font-size: 28px;
+  }
+  .shareFluid .shareContainer .desc {
+    font-size: 16px;
+  }
+  .shareFluid .shareContainer .originalBear,
+  .shareFluid .shareContainer .chocolateSmall,
+  .shareFluid .shareContainer .bottleSmall {
+    position: static;
+    width: 205px;
+  }
+  .shareFluid .shareContainer .invite50FriendsWrap .inviteBlockTop {
+    background: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 0;
+    padding: 0;
+  }
+  .shareFluid .shareContainer .invite50FriendsWrap .title {
+    text-align: center;
+    color: #000000;
+    padding: 0px 10px;
+  }
+  .shareFluid .shareContainer .invite50FriendsWrap .invite50Title {
+    margin-top: 0px;
+  }
+  .shareFluid .shareContainer .inviteBtn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 50px;
+  }
+  .shareFluid .shareContainer .djImage {
+    display: block;
+  }
+  .shareFluid .shareContainer .social {
+    width: 100%;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  /*shareFluid end*/
+  /*  magicBottle Section Start */
+  .magicBottleFluid {
+    background: #707070;
+  }
+  .magicBottleFluid .magicBottleContainer img {
+    margin-top: 35px;
+  }
+  .magicBottleFluid .magicBottleContainer p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  /*  magicBottle Section End */
+  /* .footerFluid start*/
+  .footerFluid {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .footerFluid .footerContainer .social {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
+  .footerFluid .footerContainer .social img {
+    width: 35px;
+  }
+  .footerFluid .footerContainer .copyRight {
+    margin-bottom: 0;
+    font-size: 15px;
+  }
+  /* .footerFluid end*/
+}
+@media (min-width: 321px) and (max-width: 480px) {
+  /*header start */
+  header .headerFluid .headerContainer .headerWrap {
+    margin-top: 9px;
+  }
+  header .headerFluid .headerContainer .logo a img {
+    height: 55px;
+  }
+  /*header end */
+  /*social mini section start*/
+  .social {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .social a {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .social a img {
+    margin-right: 0;
+    width: 34px;
+  }
+  .social a span {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  .emailFluid {
+    padding-bottom: 40px;
+    background: none;
+    min-height: 0;
+  }
+  .emailFluid .emailContainer {
+    margin-top: 20px;
+  }
+  .emailFluid .emailContainer .bearBottleReferal {
+    display: none;
+  }
+  .emailFluid .emailContainer .h1 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 44px;
+  }
+  .emailFluid .emailContainer p {
+    font-size: 16px;
+  }
+  .emailFluid .emailContainer .productDesc {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 20px;
+    margin-bottom: 83px;
+    padding: 25px 15px 18px 15px;
+  }
+  .emailFluid .emailContainer .productDesc p {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .emailFluid .emailContainer .share-the-bear {
+    font-size: 20px;
+    left: 15px;
+    right: 15px;
+    position: static;
+  }
+  .emailFluid .arrowDown {
+    display: none;
+  }
+  /* productsWrapFluid1  section start */
+  .productsWrapFluid {
+    background-image: none;
+    min-height: 0;
+  }
+  .productsWrapFluid .bearProductsImg {
+    display: block;
+  }
+  /* productsWrapFluid1  section end */
+  /*shareFluid start*/
+  .shareFluid {
+    background: #ffffff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .shareFluid .shareContainer .h2 {
+    margin-top: 0;
+    font-size: 41px;
+    margin-bottom: 15px;
+  }
+  .shareFluid .shareContainer .h3 {
+    text-align: center;
+    font-size: 34px;
+  }
+  .shareFluid .shareContainer .inviteWrap7Friends {
+    margin-top: 20px;
+  }
+  .shareFluid .shareContainer .inviteWrap {
+    width: 100%;
+  }
+  .shareFluid .shareContainer .inviteBlockTop {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .shareFluid .shareContainer .inviteBlock {
+    margin-top: 20px;
+    margin-bottom: 45px;
+  }
+  .shareFluid .shareContainer .inviteLeft:before {
+    display: none;
+  }
+  .shareFluid .shareContainer .title {
+    margin-top: 14px;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    font-size: 28px;
+  }
+  .shareFluid .shareContainer .desc {
+    font-size: 16px;
+  }
+  .shareFluid .shareContainer .originalBear,
+  .shareFluid .shareContainer .chocolateSmall,
+  .shareFluid .shareContainer .bottleSmall {
+    position: static;
+    width: 205px;
+  }
+  .shareFluid .shareContainer .invite50FriendsWrap .inviteBlockTop {
+    background: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 0;
+    padding: 0;
+  }
+  .shareFluid .shareContainer .invite50FriendsWrap .title {
+    text-align: center;
+    color: #000000;
+    padding: 0px 10px;
+  }
+  .shareFluid .shareContainer .invite50FriendsWrap .invite50Title {
+    margin-top: 0px;
+  }
+  .shareFluid .shareContainer .inviteBtn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 50px;
+  }
+  .shareFluid .shareContainer .djImage {
+    display: block;
+  }
+  .shareFluid .shareContainer .social {
+    width: 100%;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  /*shareFluid end*/
+  /*  magicBottle Section Start */
+  .magicBottleFluid {
+    background: #707070;
+  }
+  .magicBottleFluid .magicBottleContainer img {
+    margin-top: 35px;
+  }
+  .magicBottleFluid .magicBottleContainer p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  /*  magicBottle Section End */
+  /* .footerFluid start*/
+  .footerFluid {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .footerFluid .footerContainer .social {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
+  .footerFluid .footerContainer .social img {
+    width: 35px;
+  }
+  .footerFluid .footerContainer .copyRight {
+    margin-bottom: 0;
+    font-size: 15px;
+  }
+  /* .footerFluid end*/
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  /*header start */
+  header .headerFluid .headerContainer .headerWrap {
+    margin-top: 9px;
+  }
+  header .headerFluid .headerContainer .logo a img {
+    height: 55px;
+  }
+  /*header end */
+  /*social mini section start*/
+  .social {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .social img {
+    margin-right: 8px;
+    width: 38px;
+  }
+  .social a span {
+    font-size: 21px;
+  }
+  /*social mini section end*/
+  .emailFluid {
+    padding-bottom: 40px;
+    background: none;
+    min-height: 0;
+  }
+  .emailFluid .emailContainer {
+    margin-top: 50px;
+  }
+  .emailFluid .emailContainer .bearBottleReferal {
+    display: none;
+  }
+  .emailFluid .emailContainer .h1 {
+    margin-top: 0px;
+    margin-bottom: 40px;
+    font-size: 80px;
+    text-align: center;
+  }
+  .emailFluid .emailContainer .h3 {
+    font-size: 36px;
+  }
+  .emailFluid .emailContainer .productDesc {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 20px;
+    margin-bottom: 83px;
+  }
+  .emailFluid .emailContainer .share-the-bear {
+    font-size: 20px;
+    left: 15px;
+    right: 15px;
+    position: static;
+  }
+  .emailFluid .arrowDown {
+    display: none;
+  }
+  /* productsWrapFluid1  section start */
+  .productsWrapFluid {
+    background-image: none;
+    min-height: 0;
+  }
+  .productsWrapFluid .bearProductsImg {
+    display: block;
+  }
+  /* productsWrapFluid1  section end */
+  /*shareFluid start*/
+  .shareFluid {
+    background: #ffffff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .shareFluid .shareContainer .h2 {
+    margin-top: 0;
+    font-size: 55px;
+    margin-bottom: 20px;
+  }
+  .shareFluid .shareContainer .h3 {
+    text-align: center;
+    font-size: 38px;
+  }
+  .shareFluid .shareContainer .inviteWrap7Friends {
+    margin-top: 20px;
+  }
+  .shareFluid .shareContainer .inviteWrap {
+    width: 100%;
+  }
+  .shareFluid .shareContainer .inviteBlockTop {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .shareFluid .shareContainer .inviteBlock {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .shareFluid .shareContainer .inviteLeft:before {
+    display: none;
+  }
+  .shareFluid .shareContainer .title {
+    margin-top: 20px;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  .shareFluid .shareContainer .originalBear,
+  .shareFluid .shareContainer .chocolateSmall,
+  .shareFluid .shareContainer .bottleSmall {
+    position: static;
+  }
+  .shareFluid .shareContainer .invite50FriendsWrap .inviteBlockTop {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    background: none;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 0;
+    padding: 0;
+  }
+  .shareFluid .shareContainer .invite50FriendsWrap .title {
+    text-align: center;
+    color: #000000;
+    padding: 0px 10px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .shareFluid .shareContainer .invite50FriendsWrap .invite50Title {
+    margin-top: 0px;
+  }
+  .shareFluid .shareContainer .inviteBtn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 50px;
+  }
+  .shareFluid .shareContainer .djImage {
+    display: block;
+  }
+  .shareFluid .shareContainer .social {
+    width: 100%;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  /*shareFluid end*/
+  /*  magicBottle Section Start */
+  .magicBottleFluid .magicBottleContainer img {
+    margin-top: -50px;
+  }
+  .magicBottleFluid .magicBottleContainer p {
+    line-height: 47px;
+    font-size: 24px;
+    color: #fff;
+    padding-bottom: 20px;
+  }
+  /*  magicBottle Section End */
+  /*footerFluid start*/
+  .footerFluid {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .footerFluid .footerContainer .social {
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  /*footerFluid start*/
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  /*social mini section start*/
+  .social img {
+    margin-right: 8px;
+  }
+  .social a span {
+    font-size: 24px;
+  }
+  /*social mini section end*/
+  .emailFluid {
+    padding-bottom: 100px;
+    background: none;
+    min-height: 0;
+  }
+  .emailFluid .emailContainer .bearBottleReferal {
+    display: none;
+  }
+  .emailFluid .emailContainer .h1 {
+    font-size: 100px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .emailFluid .emailContainer p {
+    font-size: 24px;
+  }
+  .emailFluid .emailContainer .productDesc {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 35px;
+    margin-bottom: 83px;
+  }
+  .emailFluid .emailContainer .share-the-bear {
+    position: static;
+  }
+  .emailFluid .arrowDown {
+    bottom: 38px;
+  }
+  /*shareFluid start*/
+  .shareFluid {
+    background: #ffffff;
+    padding-top: 40px;
+    padding-bottom: 120px;
+  }
+  .shareFluid .shareContainer .h2 {
+    margin-bottom: 35px;
+    margin-top: 0;
+  }
+  .shareFluid .shareContainer .inviteWrap7Friends {
+    margin-top: 20px;
+  }
+  .shareFluid .shareContainer .inviteWrap {
+    width: 100%;
+  }
+  .shareFluid .shareContainer .inviteBlockTop {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .shareFluid .shareContainer .inviteBlock {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .shareFluid .shareContainer .inviteLeft:before {
+    display: none;
+  }
+  .shareFluid .shareContainer .chocolateSmall {
+    top: -42px;
+  }
+  .shareFluid .shareContainer .djImage {
+    display: none;
+  }
+  .shareFluid .shareContainer .social {
+    width: 100%;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  .shareFluid .shareContainer .invite50FriendsWrap .invite50Title {
+    margin-top: 35px;
+  }
+  /*shareFluid end*/
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .emailFluid {
+    padding-bottom: 60px;
+  }
+  .emailFluid .emailContainer .bearBottleReferal img {
+    margin-top: 100px;
+    position: static;
+  }
+  .emailFluid .emailContainer .bearBottleReferal .cho-top {
+    margin-top: -240px;
+    margin-left: 200px;
+    height: 300px;
+  }
+  .emailFluid .emailContainer .bearBottleReferal .ori-mid {
+    margin-top: -130px;
+    margin-left: 80px;
+    height: 300px;
+  }
+  .emailFluid .emailContainer .bearBottleReferal .cho-bottom {
+    margin-top: -120px;
+    margin-left: 200px;
+    height: 300px;
+  }
+  .emailFluid .emailContainer .bearBottleReferal .pumpkin {
+    margin-top: 240px;
+    margin-left: 60px;
+    height: 120px;
+  }
+  .emailFluid .emailContainer .bearBottleReferal .coconut {
+    margin-top: -165px;
+    margin-left: 330px;
+    height: 110px;
+  }
+  .emailFluid .emailContainer .bearBottleReferal .kale {
+    top: 80px;
+    right: 50px;
+    height: 190px;
+    z-index: 1;
+    margin-top: -566px;
+    margin-left: 323px;
+  }
+  .emailFluid .emailContainer .h1 {
+    text-align: center;
+  }
+  .emailFluid .emailContainer .h3 {
+    font-size: 42px;
+  }
+  .emailFluid .emailContainer p {
+    font-size: 18px;
+  }
+  .emailFluid .emailContainer .share-the-bear {
+    left: 0;
+    right: 0;
+  }
+  .emailFluid .arrowDown {
+    bottom: 60px;
+  }
+  /*shareFluid start*/
+  .shareFluid .shareContainer .originalBear {
+    width: 250px;
+    position: absolute;
+    margin: auto;
+    top: -62px;
+    left: 0;
+    right: 0;
+  }
+  .shareFluid .shareContainer .chocolateSmall {
+    width: 300px;
+    position: absolute;
+    margin: auto;
+    top: -58px;
+    left: 0;
+    right: 0;
+  }
+  .shareFluid .shareContainer .bottleSmall {
+    width: 268px;
+    position: absolute;
+    margin: auto;
+    top: -74px;
+    left: 65px;
+    right: 0;
+  }
+  .shareFluid .shareContainer .inviteBlock1 {
+    margin-bottom: 56px;
+  }
+  .shareFluid .shareContainer .djImage {
+    display: none;
+  }
+  /*shareFluid end*/
+}
